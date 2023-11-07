@@ -46,7 +46,7 @@ h2 {
 
 body {
   background-color: var(--background-color);
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-roboto-mono), serif;
   font-size: 20px;
   color:var(--main-color);
 }
