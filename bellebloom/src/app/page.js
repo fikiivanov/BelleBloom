@@ -7,20 +7,19 @@ import Products from "./components/Products/Products";
 
 export default function Home() {
   return (
-  <div className="wrapper">
-    <Header/>
+	<div className="wrapper">
+		<Header/>
 
-    <div className="main">
-      <Hero/>
+		<div className="main">
+			<Hero/>
 
-      <ImageText/>
+			<ImageText/>
 
-      <Products/>
+			<Products/>
 
-      <Blogs/>
-    </div>
-    {/*main*/}
-  </div>
+			<Blogs/>
+		</div>
+	</div>
   
   )
 }
