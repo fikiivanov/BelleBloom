@@ -25,26 +25,38 @@ img {
 
 /* Base */
 
-$main-color: #3F0D12;
-$primary-color: #F8DDE0;
-$background-color:#DCDEE5;
-$background-color-dark:#202020;
+    $main-color: #3F0D12;
+    $primary-color: #F8DDE0;
+    $background-color:#DCDEE5;
+    $background-color-dark:#202020;
 
-:export {
-  primaryColor: $primary-color;
-  mainColor:$main-color;
-  backgroundColor:$background-color;
+:root {
+    --font-size:16px;
+    }
+
+@media screen and (max-width: 600px) {
+
+    :root {
+    --font-size:12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    :root {
+        --font-size:22px;
+        }
 }
 
 h1 {
     color:$primary-color;
-    font-size: 51px;
+    font-size: calc(var(--font-size) + 34px);
     font-weight: 400;
 }
 
 h2 {                                        
     color:$main-color;
-    font-size: 34px;
+    font-size: calc(var(--font-size) + 20px);
     font-weight: 400;
     text-align: center;
 }
@@ -52,7 +64,7 @@ h2 {
 body {
     background-color:$background-color;
     font-family: var(--font-roboto-mono), serif;
-    font-size: 20px;
+    font-size: calc(var(--font-size) + 4px);
     color:$main-color;
 }
 
@@ -66,20 +78,20 @@ p {
 }
 
 p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Shell */
 
 .shell {
-  padding: 0px 8%;
+    padding: 0px 8%;
 }
 
 /* logo */
 
 .logo {
-  text-transform: uppercase;
-  font-size: 36px;
+    text-transform: uppercase;
+    font-size: calc(var(--font-size) + 20px);
 }
 
 /* line */
@@ -93,41 +105,41 @@ p:last-child {
 /* btn */
 
 .btn {
-  border: 1px solid $primary-color;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  text-align: center;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 12px 12px;
-  transition: all 0.5s;
-  cursor: pointer;
+    border: 1px solid $primary-color;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: calc(var(--font-size) + 2px);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 12px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .btn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .btn:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .btn:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 .btn--reverse {
