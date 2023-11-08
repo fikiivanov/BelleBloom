@@ -11,9 +11,13 @@
         justify-content: space-between;
         margin-bottom: 35px;
       }
-      
-      .section__image img {
-        max-height: 75vh;
+
+      .section__image {
+        text-align: center;
+
+        img {
+          max-height: 75vh;
+        }
       }
 
       .section__text h2 {
@@ -26,7 +30,24 @@
         flex-direction: column;
         justify-content:space-between;
       }
+}
+
+
+@media screen and (max-width: 900px) {
+  .section-image-text {
+   
+      .section__body {
+        display: block;
+      }
       
-      
+      .section__image img {
+        max-height: 75vh;
+        margin-top: 35px;
+      }
+
+      .section__text {
+        max-width: 100%;
+      }
+}
 }
 

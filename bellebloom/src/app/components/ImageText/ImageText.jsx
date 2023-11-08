@@ -37,12 +37,7 @@ const ImageText = () => {
                         adults, and elder women. Discover the transformative power of
                         our face skin cosmetics, the enchantment of hair cosmetics, and
                         the allure of makeup essentials – all meticulously curated to
-                        elevate your beauty experience. Let us be your guides, helping
-                        you navigate this vibrant world of colors, textures, and
-                        formulations. Here, beauty isn't just skin deep; it's a
-                        celebration of individuality. Welcome to a space where your
-                        cosmetic aspirations come to life, and your radiant self shines
-                        through!
+                        elevate your beauty experience.
                         </p>
 
                     </div>
