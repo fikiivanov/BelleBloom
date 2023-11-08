@@ -6,10 +6,11 @@
 ;
     h1 {
         color: $main-color;
+        margin-top: 30px; 
     }
 
-    p {
-        margin-top: 20px;
+    p,p:last-child {
+        margin: 15px 0px;
     }
 
     .section__inner {

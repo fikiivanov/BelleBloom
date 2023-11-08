@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const NavbarMob= () => {
@@ -5,29 +6,30 @@ const NavbarMob= () => {
     <nav className="nav-mob">
       <ul>
         <li>
-            <a href="">Home</a>
+            <Link href={"/"}>Home</Link>
         </li>
-        <hr />
+        <hr/>
 
         <li>
-            <a href="">About Us</a>
+            <Link href={"about"}>About Us</Link>
         </li>
-        <hr />
+        <hr/>
 
         <li>
-            <a href="">Blogs</a>
+            <Link href={"blogs"}>Blogs</Link>
         </li>
-        <hr />
+        <hr/>
 
         <li>
-            <a href="">Cosmetics Info</a>
+            <Link href={"products"}>Cosmetics Info</Link>
+
         </li>
-        <hr />
+        <hr/>
 
         <li>
-            <a href="">Contact</a>
+            <Link href={"contact"}>Contact </Link>
         </li>
-        <hr />
+        <hr/>
       </ul>
     </nav>
   );

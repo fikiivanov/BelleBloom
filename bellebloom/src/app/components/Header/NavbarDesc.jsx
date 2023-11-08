@@ -10,11 +10,11 @@ const NavbarDesc= () => {
         </li>
 
         <li>
-        <Link href={"about"}>About Us</Link>
+            <Link href={"about"}>About Us</Link>
         </li>
 
         <li>
-        <Link href={"blogs"}>Blogs</Link>
+            <Link href={"blogs"}>Blogs</Link>
         </li>
 
         <li>
@@ -24,7 +24,7 @@ const NavbarDesc= () => {
 
         <li>
             <Link href={"contact"}>Contact </Link>
-              </li>
+        </li>
       </ul>
     </nav>
   );
