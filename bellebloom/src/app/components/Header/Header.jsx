@@ -5,12 +5,13 @@ import style from "./style.scss";
 import { AiOutlineMenu,  AiOutlineClose } from "react-icons/ai";
 import NavbarMob from "./NavbarMob";
 
-const Header = () => {
+const Header = ({caller}) => {
   const [open, setOpen] = useState(false);
-  
+
+  const headerClassName = caller === 'hero' ? 'header-hero' : 'header';
 
   return (
-    <header className="header">
+    <header className={headerClassName}  >
       <div className="shell">
         <div className="header__inner">
           <div className="logo">

@@ -10,7 +10,7 @@ import Products from "./components/Products/Products";
 export default function Home() {
   return (
 	<div className="wrapper">
-		<Header/>
+		<Header caller={"hero"}/>
 
 		<div className="main">
 			<Hero/>

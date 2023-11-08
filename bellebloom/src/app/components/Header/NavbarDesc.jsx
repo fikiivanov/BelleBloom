@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarDesc= () => {
   return (
-    <nav className="nav-desc">
+    <nav className='nav-desc'>
       <ul>
         <li>
             <a href="">Home</a>
