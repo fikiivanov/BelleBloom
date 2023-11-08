@@ -1,4 +1,5 @@
 import Blogs from "./components/Blogs/Blogs";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import ImageText from "./components/ImageText/ImageText";
@@ -20,7 +21,10 @@ export default function Home() {
 
 			<Blogs/>
 		</div>
+
+		<Footer/>
 	</div>
+
   
   )
 }

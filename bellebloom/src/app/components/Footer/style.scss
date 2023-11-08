@@ -1,0 +1,46 @@
+@import "../../globals.scss";
+
+.footer {
+    background-color: $background-color-dark;
+    color: $primary-color;
+    text-align: center;
+
+    .footer__inner {
+        padding-top: 50px;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+        min-height: 200px;
+        justify-content: space-around;
+        border-bottom: 1px solid $primary-color;
+        border-top: 1px solid $primary-color;
+
+    }
+    
+    hr  {
+        margin: 0 10px;
+    }
+
+    .footer__bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .location,
+    .contact,
+    .footer__nav ul 
+    {
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer__bar {
+        padding: 20px 0px ;
+    }
+}
