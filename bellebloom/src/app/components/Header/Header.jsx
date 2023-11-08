@@ -20,6 +20,7 @@ const Header = () => {
           <NavbarDesc/>
     
           {open&&<NavbarMob/>}
+          
           <div className="header__menu" onClick={() => setOpen(!open)}>
             {open ?< AiOutlineClose  className="icon"/>: <AiOutlineMenu className="icon" />}
           </div>
