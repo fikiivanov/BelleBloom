@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import style from "./style.scss"
+import Image from 'next/image'
 
 const Products = () => {
 
@@ -36,7 +37,7 @@ const Products = () => {
                     <div className="cards">
                         <ul>
                             <li className="card">
-                                <img
+                                <Image width={300} height={300}
                                 src="https://d3t32hsnjxo7q6.cloudfront.net/i/88d74b22173b3f912b2263c4fd505a2b_ra,w158,h184_pa,w158,h184.jpg"
                                 alt=""
                                 />
@@ -45,8 +46,8 @@ const Products = () => {
                             </li>
 
                             <li className="card">
-                                <img
-                                src="https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw6790cad4/ProductImages/Lips/Simply_Nude_Lip_Cream/simplynudlipcream_main.jpg?sw=390&sh=390&sm=fit"
+                                <Image width={300} height={300} priority={true}
+                                src="https://d3t32hsnjxo7q6.cloudfront.net/i/baf991d5944d310d8c337423486b77ea_ra,w158,h184_pa,w158,h184.jpeg"
                                 alt=""
                                 />
 
@@ -54,7 +55,7 @@ const Products = () => {
                             </li>
 
                             <li className="card">
-                                <img
+                                <Image width={300} height={300}
                                 src="https://d3t32hsnjxo7q6.cloudfront.net/i/baf991d5944d310d8c337423486b77ea_ra,w158,h184_pa,w158,h184.jpeg"
                                 alt=""
                                 />
@@ -63,7 +64,7 @@ const Products = () => {
                             </li>
 
                             <li className="card">
-                                <img
+                                <Image width={300} height={300}
                                 src="https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803"
                                 alt=""
                                 />
@@ -72,7 +73,7 @@ const Products = () => {
                             </li>
 
                             <li className="card">
-                                <img
+                                <Image width={300} height={300}
                                 src="https://d3t32hsnjxo7q6.cloudfront.net/i/87772297ba0794c272d7e9f751d3beac_ra,w158,h184_pa,w158,h184.jpeg"
                                 alt=""
                                 />
@@ -81,7 +82,7 @@ const Products = () => {
                             </li>
 
                             <li className="card">
-                                <img
+                                <Image width={300} height={300}
                                 src="https://d3t32hsnjxo7q6.cloudfront.net/i/baf991d5944d310d8c337423486b77ea_ra,w158,h184_pa,w158,h184.jpeg"
                                 alt=""
                                 />

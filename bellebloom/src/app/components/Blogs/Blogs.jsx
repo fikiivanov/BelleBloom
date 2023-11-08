@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "./style.scss"
+import Image from 'next/image'
 
 const Blogs = () => {
   return (
@@ -10,7 +11,7 @@ const Blogs = () => {
 
                 <ul className="blogs">
                     <li className='blog'>
-                        <img src="./images/Blogs/acne.png" alt="" />
+                        <Image width={400} height={400} src="/images/Blogs/acne.png" alt="" />
 
                        <div className="card__text">
                            <h3>Acne</h3>    
@@ -20,7 +21,7 @@ const Blogs = () => {
                     </li>
                   
                     <li className='blog'>
-                        <img src="./images/Blogs/freckles.png" alt="" />
+                        <Image width={400} height={400} src="/images/Blogs/freckles.png" alt="" />
 
                        <div className="card__text">
                            <h3>Freckles</h3>    
@@ -30,7 +31,7 @@ const Blogs = () => {
                     </li>
 
                     <li className='blog'>
-                        <img src="./images/Blogs/clay-mask.png" alt="" />
+                        <Image width={400} height={400} src="/images/Blogs/clay-mask.png" alt="" />
 
                        <div className="card__text">
                            <h3>Clay mask</h3>    
