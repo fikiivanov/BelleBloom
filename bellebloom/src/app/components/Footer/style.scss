@@ -6,17 +6,22 @@
     text-align: center;
 
     .footer__inner {
-        padding-top: 50px;
+        padding-top: 25px;
     }
 
     .footer__content {
         display: flex;
         flex-wrap: wrap;
-        padding: 20px 0px;
-        min-height: 200px;
+        padding: 15px 0px;
+        min-height: 150px;
+
         justify-content: space-around;
         border-bottom: 1px solid $primary-color;
         border-top: 1px solid $primary-color;
+
+        p {
+            margin: 0;
+         }
     }
     
     hr  {
@@ -33,15 +38,15 @@
     .contact,
     .footer__nav ul 
     {
-        padding: 5% 0%;
+        margin-top: 10px;
         display: flex;
-        min-height: 100%;
+        min-height: 80%;
         flex-direction: column;
         justify-content: space-between;
         
     }
 
     .footer__bar {
-        padding: 20px 0px ;
+        padding: 10px 0px ;
     }
 }

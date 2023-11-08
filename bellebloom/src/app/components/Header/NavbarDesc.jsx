@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const NavbarDesc= () => {
@@ -5,24 +6,25 @@ const NavbarDesc= () => {
     <nav className='nav-desc'>
       <ul>
         <li>
-            <a href="">Home</a>
+            <Link href={"/"}>Home</Link>
         </li>
 
         <li>
-            <a href="">About Us</a>
+        <Link href={"about"}>About Us</Link>
         </li>
 
         <li>
-            <a href="">Blogs</a>
+        <Link href={"blogs"}>Blogs</Link>
         </li>
 
         <li>
-            <a href="">Cosmetics Info</a>
+            <Link href={"products"}>Cosmetics Info</Link>
+
         </li>
 
         <li>
-            <a href="">Contact</a>
-        </li>
+            <Link href={"contact"}>Contact </Link>
+              </li>
       </ul>
     </nav>
   );

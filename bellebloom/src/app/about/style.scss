@@ -8,13 +8,17 @@
         color: $main-color;
     }
 
+    p {
+        margin-top: 20px;
+    }
+
     .section__inner {
         border-top: 1px solid $main-color;
         border-bottom: 1px solid $main-color;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 80vh;
+        min-height: 80vh;
     }
 }
 
