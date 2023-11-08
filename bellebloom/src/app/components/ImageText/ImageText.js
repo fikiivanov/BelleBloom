@@ -54,6 +54,8 @@ const ImageText = () => {
                      <span>More </span>
                 </a>
             </div>
+
+            <hr className='line'/>
         </div>
     </section>
   );

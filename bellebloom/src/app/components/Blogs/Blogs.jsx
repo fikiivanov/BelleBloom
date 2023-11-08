@@ -41,7 +41,10 @@ const Blogs = () => {
 
                 <a href="" className='btn btn--reverse'>More</a>
             </div>
+
+            <hr  className='line'/>
         </div>
+
       </section>
   )
 }

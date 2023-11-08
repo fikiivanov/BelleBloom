@@ -94,6 +94,8 @@ const Products = () => {
                     </div>
                 </div>
             </div>
+
+            <hr className='line'/>
         </div>
     </section>
   )

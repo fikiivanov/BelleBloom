@@ -13,7 +13,7 @@ export default function Home() {
 
 		<div className="main">
 			<Hero/>
-
+			
 			<ImageText/>
 
 			<Products/>
