@@ -1,0 +1,22 @@
+
+@import "../../globals.scss";
+
+.header {
+    position: absolute;
+    color: $primary-color;
+    width: 100%;
+    padding: 2rem 0rem;
+
+
+    .header__inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+  }
+}

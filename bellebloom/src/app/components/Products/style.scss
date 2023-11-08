@@ -1,0 +1,42 @@
+@import "../../globals.scss";
+
+.section-products {
+    margin: 50px 0px;
+
+    .section__head {
+        text-align: center;
+    }
+  
+    .section__inner  a {
+        color: $main-color;
+        position: relative;
+        text-decoration: none;
+        transition: border-bottom 0.3s ease;
+    }
+
+    .section__inner  a::after {
+        content: "";
+        position: absolute;
+        background-color: $main-color;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: width 0.3s ease;
+    }
+
+    .section__inner  a:hover::after {
+        width: 100%;
+    }
+
+    .section__nav-categories  {
+        padding: 20px 0px;
+    }
+
+    .section__nav-categories ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
