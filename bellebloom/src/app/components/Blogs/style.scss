@@ -5,6 +5,7 @@
 .blogs { 
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     margin: 50px 0px;
 
     .blog {
@@ -59,4 +60,33 @@
         }
     }
     
+}
+  
+@media screen and (max-width:900px) {
+   
+    .section-blogs {
+        .blogs {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .blog {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 502px) {
+   
+    .section-blogs {
+        .blogs {
+            flex-direction: column;
+            .blog {
+                width: 50%;
+            }
+        }
+    }
 }
