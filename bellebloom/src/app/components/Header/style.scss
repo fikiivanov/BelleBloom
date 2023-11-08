@@ -106,4 +106,14 @@
 
 
     }
+
+    .header-hero {
+      .nav-desc ul {
+       display: none;
+      } 
+
+      .header__menu {
+       display: block;
+      }
+   }
 }

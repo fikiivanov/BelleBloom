@@ -6,7 +6,7 @@ import Header from '../components/Header/Header'
 const page = () => {
   return (
     <section className="section-about-us">
-      <Header caller={"another"} />
+      <Header caller={"header"} />
         <div className="shell">
             <div className="section__inner">
                 <h1>About Us</h1>

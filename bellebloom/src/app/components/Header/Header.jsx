@@ -1,5 +1,5 @@
 "use client";
-import {React,  useState } from "react";
+import {React,  useEffect,  useState } from "react";
 import NavbarDesc from "./NavbarDesc";
 import style from "./style.scss";
 import { AiOutlineMenu,  AiOutlineClose } from "react-icons/ai";
