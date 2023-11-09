@@ -10,7 +10,9 @@ const NavbarMob = ({ isOpen }) => {
       transition={{ type: "spring", stiffness: 100 }}
       className="nav-mob"
     >
+
       <ul>
+      <h3 className="logo">Bellebloom</h3>
         <li>
           <Link href={"/"}>Home</Link>
         </li>
