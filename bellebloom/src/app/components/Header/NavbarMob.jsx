@@ -1,37 +1,42 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
-const NavbarMob= () => {
+const NavbarMob = ({ isOpen }) => {
   return (
-    <nav className="nav-mob">
+    <motion.nav
+      animate={{ x: isOpen ? 0 : -350 }}
+      transition={{ type: "spring", stiffness: 100 }}
+      className="nav-mob"
+    >
       <ul>
         <li>
-            <Link href={"/"}>Home</Link>
+          <Link href={"/"}>Home</Link>
         </li>
-        <hr/>
+        <hr />
 
         <li>
-            <Link href={"about"}>About Us</Link>
+          <Link href={"about"}>About Us</Link>
         </li>
-        <hr/>
+        <hr />
 
         <li>
-            <Link href={"blogs"}>Blogs</Link>
+          <Link href={"blogs"}>Blogs</Link>
         </li>
-        <hr/>
+        <hr />
 
         <li>
-            <Link href={"products"}>Cosmetics Info</Link>
-
+          <Link href={"products"}>Cosmetics Info</Link>
         </li>
-        <hr/>
+        <hr />
 
         <li>
-            <Link href={"contact"}>Contact </Link>
+          <Link href={"contact"}>Contact </Link>
         </li>
-        <hr/>
+        <hr />
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
