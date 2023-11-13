@@ -11,19 +11,28 @@ const Blogs = ({ props }) => {
       opacity: 1,
       x: 0,
       transition: {
-        type: "tween",
-        stiffness: 100,
         duration: 1,
       },
     },
   };
 
+  const framerVariantTitle = {
+    hidden: { y: -100, opacity: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: .8,
+      },
+    },
+  };
   return (
     <section className="section-blogs">
       <div className="shell">
         <div className="section__inner">
+            <ShowEffectProvider variant={framerVariantTitle}>
           <h2>{props[0].blogTitle}</h2>
-
+          </ShowEffectProvider>
           <ShowEffectProvider variant={framerVariant}>
             <ul className="blogs">
               {props.map((card) => (
