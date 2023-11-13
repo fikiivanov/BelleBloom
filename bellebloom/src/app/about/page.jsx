@@ -1,10 +1,23 @@
+'use client'
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import style from "./style.scss"
 import Header from '../components/Header/Header'
+import ShowEffectProvider from '../providers/ShowEffectProvider'
 
 const page = () => {
+  const framerVariant = {
+    hidden: { y: -50, opacity: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
   return (
+    <ShowEffectProvider variant={framerVariant}>
     <section className="section-about-us">
       <Header caller={"header"} />
         <div className="shell">
@@ -19,6 +32,7 @@ const page = () => {
 
         <Footer/>
     </section>
+    </ShowEffectProvider>
   )
 }
 

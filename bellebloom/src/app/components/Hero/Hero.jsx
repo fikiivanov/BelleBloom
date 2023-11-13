@@ -6,12 +6,12 @@ import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 const Hero = () => {
   
   const framerVariant = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0 , y:-20},
     show: {
+      y:0,
       opacity: 1,
       transition: {
         duration: .5,
-        x: { duration: .5 },
       },
     },
   };
