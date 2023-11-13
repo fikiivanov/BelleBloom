@@ -1,9 +1,12 @@
+
+import { blogTextMain } from "../../public/blogText/blogtext";
 import Blogs from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import ImageText from "./components/ImageText/ImageText";
 import Products from "./components/Products/Products";
+
 
 
 export default function Home() {
@@ -18,7 +21,7 @@ export default function Home() {
 			
 			<Products/>
 		
-			<Blogs/>
+			<Blogs props={blogTextMain[0]}/>
 		</div>
 
 		<Footer/>

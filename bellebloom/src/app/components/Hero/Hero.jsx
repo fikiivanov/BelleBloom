@@ -9,8 +9,8 @@ const Hero = () => {
     show: {
       opacity: 1,
       transition: {
-        duration: 0.5,
-        x: { duration: 0.5 },
+        duration: .5,
+        x: { duration: .5 },
       },
     },
   };

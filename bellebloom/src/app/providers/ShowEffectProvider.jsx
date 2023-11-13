@@ -3,7 +3,7 @@ import React from "react";
 
 const ShowEffectProvider = ({ children, variant }) => {
   return (
-    <motion.div animate="hidden" variants={variant}  whileInView="show"
+    <motion.div initial="hidden" variants={variant}  whileInView="show"
      >
       {children}
     </motion.div>
