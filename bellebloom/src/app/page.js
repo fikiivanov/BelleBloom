@@ -19,7 +19,7 @@ export default function Home() {
 
 			<ImageText/>
 			
-			<Products categories={["Blush","Bronzer","Eyebrow"]} title={"Cosmetics Info"} />
+			<Products categories={["Blush","Bronzer","Eyesbrow"]} title={"Cosmetics Info"} />
 		
 			<Blogs props={blogTextMain[0]}/>
 		</div>

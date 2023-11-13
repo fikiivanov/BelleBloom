@@ -1,12 +1,35 @@
 "use client";
-import React, { useId } from "react";
+import React, { useEffect, useId, useState } from "react";
 import style from "./style.scss";
 import Image from "next/image";
+import axios from "axios";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 
-
 const Products = ({ categories, title, classname }) => {
+  const [data, setData] = useState([]);
 
+  let fetchInfo = (type) => {
+    return axios
+      .get(
+        `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${type}`
+      )
+      .then((res) => setData(res.data.slice(0, 10).reverse()))
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setData([]); // or handle the error as needed
+      });
+  };
+
+  const handleTypeClick = (e) => {
+    e.preventDefault();
+    let type = e.target.innerHTML.toLowerCase().replace(/ /g, "_");
+
+    fetchInfo(type);
+  };
+  useEffect(() => {
+    // Initial fetch with default type (lipstick)
+    fetchInfo("bronzer");
+  }, []);
   let classNameNav = `section__nav-categories ${classname}`;
 
   const framerVariantRight = {
@@ -46,9 +69,9 @@ const Products = ({ categories, title, classname }) => {
 
               <nav className={classNameNav}>
                 <ul>
-                  {categories.map((e) => (
-                    <li key={useId()}>
-                      <a href="">{e}</a>
+                  {categories.map((category) => (
+                    <li onClick={handleTypeClick} key={useId()}>
+                      <a href="">{category}</a>
                     </li>
                   ))}
                 </ul>
@@ -60,75 +83,26 @@ const Products = ({ categories, title, classname }) => {
             <div className="section__body">
               <div className="cards">
                 <ul>
-                  <li className="card">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="https://d3t32hsnjxo7q6.cloudfront.net/i/88d74b22173b3f912b2263c4fd505a2b_ra,w158,h184_pa,w158,h184.jpg"
-                      alt=""
-                    />
+                  {data.map((product) => (
+                    <li key={product.id} props={product} className="card">
+                      <Image
+                        onError={(e) => {
+                          e.target.onerror = null; // prevent infinite loop
+                          e.target.src =
+                            "https://scontent.fpdv1-1.fna.fbcdn.net/v/t1.6435-9/118086965_3083762088359603_978286998271727299_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c2f564&_nc_ohc=nY2jrGP7TJMAX887GN_&_nc_ht=scontent.fpdv1-1.fna&oh=00_AfCcSyHMFEBnwyFzKXV3xiXxH_9QPzelPA27s-tlf7bN7g&oe=657A0337"; // replace with your placeholder image
+                        }}
+                        priority
+                        width={200}
+                        height={200}
+                        loader={() => product.image_link}
+                        unoptimized={true}
+                        src={product.image_link}
+                        alt=""
+                      />
 
-                    <h3>Anna Sui Pencil Eyeliner WP</h3>
-                  </li>
-
-                  <li className="card">
-                    <Image
-                      width={300}
-                      height={300}
-                      priority={true}
-                      src="https://d3t32hsnjxo7q6.cloudfront.net/i/baf991d5944d310d8c337423486b77ea_ra,w158,h184_pa,w158,h184.jpeg"
-                      alt=""
-                    />
-
-                    <h3>Blotted Lip</h3>
-                  </li>
-
-                  <li className="card">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="https://d3t32hsnjxo7q6.cloudfront.net/i/baf991d5944d310d8c337423486b77ea_ra,w158,h184_pa,w158,h184.jpeg"
-                      alt=""
-                    />
-
-                    <h3>Lippie Stix</h3>
-                  </li>
-
-                  <li className="card">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803"
-                      alt=""
-                    />
-
-                    <h3>Diorshow Iconic</h3>
-                  </li>
-
-                  <li className="card">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="https://d3t32hsnjxo7q6.cloudfront.net/i/87772297ba0794c272d7e9f751d3beac_ra,w158,h184_pa,w158,h184.jpeg"
-                      alt=""
-                    />
-
-                    <h3>Cargo Cosmetics BeachBlush</h3>
-                  </li>
-
-                  <li className="card">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="https://d3t32hsnjxo7q6.cloudfront.net/i/baf991d5944d310d8c337423486b77ea_ra,w158,h184_pa,w158,h184.jpeg"
-                      alt=""
-                    />
-
-                    <h3>
-                      Pacifica Natural Minerals Solar Complete Color Mineral
-                      Palette
-                    </h3>
-                  </li>
+                      <h3>{product.name}</h3>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

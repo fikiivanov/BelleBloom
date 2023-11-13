@@ -11,8 +11,8 @@ const page = () => {
       <Header caller={"header"} />
       
       <Products categories={["Blush","Bronzer","Eyebrow",]} title={"Face Products"} classname={"product-page"}/>
-      <Products categories={["Eyeliner","Eyeshadow","Foundation","Lip liner"]} title={"Eye and Face Products"} classname={"product-page"}/>
-      <Products categories={["Lipstick","Mascara","Nail polish"]} title={"Lip and Nail Products"} classname={"product-page"}/>
+      <Products categories={["Eyeliner","Foundation","Lip liner"]} title={"Eye and Face Products"} classname={"product-page"}/>
+      <Products categories={["Lipstick","Mascara",]} title={"Lip and Nail Products"} classname={"product-page"}/>
 
       <Footer />
     </div>
