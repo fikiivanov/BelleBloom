@@ -2,7 +2,7 @@
 import React from "react";
 import style from "./style.scss";
 import Image from "next/image";
-import PopEffectProvider from "@/app/providers/PopEffectProvider";
+import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 
 const Blogs = () => {
   const framerVariant= {
@@ -23,7 +23,7 @@ const Blogs = () => {
         <div className="section__inner">
           <h2>Blogs</h2>
 
-          <PopEffectProvider variant={framerVariant}>
+          <ShowEffectProvider variant={framerVariant}>
             <ul className="blogs">
               <li className="blog">
                 <Image
@@ -70,7 +70,7 @@ const Blogs = () => {
                 </div>
               </li>
             </ul>
-          </PopEffectProvider>
+          </ShowEffectProvider>
           <a href="" className="btn btn--reverse ">
             <span>More </span>
           </a>

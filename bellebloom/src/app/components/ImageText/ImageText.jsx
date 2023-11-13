@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import style from "./style.scss"
-import PopEffectProvider from "@/app/providers/PopEffectProvider";
+import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 
 
 const ImageText = () => {
@@ -17,7 +17,7 @@ const ImageText = () => {
         },
       };
       return (
-        <PopEffectProvider variant={framerVariant}>
+        <ShowEffectProvider variant={framerVariant}>
         <section className="section-image-text">
             <div className="shell">
                 <div className="section__inner">
@@ -69,7 +69,7 @@ const ImageText = () => {
                 <hr className='line'/>
             </div>
         </section>
-    </PopEffectProvider>
+    </ShowEffectProvider>
 
   );
 };

@@ -2,7 +2,7 @@
 import React from "react";
 import style from "./style.scss";
 import Image from "next/image";
-import PopEffectProvider from "@/app/providers/PopEffectProvider";
+import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 const Hero = () => {
   const framerVariant = {
     hidden: { opacity: 0 },
@@ -15,7 +15,7 @@ const Hero = () => {
     },
   };
   return (
-    <PopEffectProvider variant={framerVariant}>
+    <ShowEffectProvider variant={framerVariant}>
       <section className="hero">
         <Image
           width={2000}
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </PopEffectProvider>
+    </ShowEffectProvider>
   );
 };
 

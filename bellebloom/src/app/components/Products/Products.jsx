@@ -2,11 +2,11 @@
 import React from "react";
 import style from "./style.scss";
 import Image from "next/image";
-import PopEffectProvider from "@/app/providers/PopEffectProvider";
+import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 
 const Products = () => {
   const framerVariantRight = {
-    hidden: { x: 300, opacity: 0 },
+    hidden: { x: -200, opacity: 0, },
     show: {
       opacity: 1,
       x: 1,
@@ -18,10 +18,11 @@ const Products = () => {
   };
 
   const framerVariantLeft = {
-    hidden: { x: -300, opacity: 0 },
+    hidden: { x: 100, opacity: 0,scale:.5 },
     show: {
       opacity: 1,
       x: 1,
+      scale:1,
 
       transition: {
         type: "tween",
@@ -34,7 +35,7 @@ const Products = () => {
     <section className="section-products">
       <div className="shell">
         <div className="section__inner">
-          <PopEffectProvider variant={framerVariantLeft}>
+          <ShowEffectProvider variant={framerVariantLeft}>
             <header className="section__head">
               <h2>Cosmetics Info</h2>
 
@@ -58,8 +59,8 @@ const Products = () => {
                 More<span> </span>
               </a>
             </header>
-          </PopEffectProvider>
-          <PopEffectProvider variant={framerVariantRight}>
+          </ShowEffectProvider>
+          <ShowEffectProvider variant={framerVariantRight}>
             <div className="section__body">
               <div className="cards">
                 <ul>
@@ -135,7 +136,7 @@ const Products = () => {
                 </ul>
               </div>
             </div>
-          </PopEffectProvider>
+          </ShowEffectProvider>
         </div>
 
         <hr className="line" />
