@@ -1,14 +1,16 @@
 "use client";
-import React from "react";
+import React, { useId } from "react";
 import style from "./style.scss";
 import Image from "next/image";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
-import Link from "next/link";
 
-const Products = ({categories,title,classname}) => {
-let classNameNav=`section__nav-categories ${classname}`
+
+const Products = ({ categories, title, classname }) => {
+
+  let classNameNav = `section__nav-categories ${classname}`;
+
   const framerVariantRight = {
-    hidden: { x: -200, opacity: 0, },
+    hidden: { x: -200, opacity: 0 },
     show: {
       opacity: 1,
       x: 1,
@@ -20,11 +22,11 @@ let classNameNav=`section__nav-categories ${classname}`
   };
 
   const framerVariantLeft = {
-    hidden: { x: 100, opacity: 0,scale:.5 },
+    hidden: { x: 100, opacity: 0, scale: 0.5 },
     show: {
       opacity: 1,
       x: 1,
-      scale:1,
+      scale: 1,
 
       transition: {
         type: "tween",
@@ -33,6 +35,7 @@ let classNameNav=`section__nav-categories ${classname}`
       },
     },
   };
+
   return (
     <section className="section-products">
       <div className="shell">
@@ -42,13 +45,15 @@ let classNameNav=`section__nav-categories ${classname}`
               <h2>{title}</h2>
 
               <nav className={classNameNav}>
-                <ul >
-                  {categories.map((e)=>(<li>
-                    <a href="">{e}</a>
-                  </li>))}
+                <ul>
+                  {categories.map((e) => (
+                    <li key={useId()}>
+                      <a href="">{e}</a>
+                    </li>
+                  ))}
                 </ul>
               </nav>
-            </header> 
+            </header>
           </ShowEffectProvider>
 
           <ShowEffectProvider variant={framerVariantRight}>
@@ -125,16 +130,13 @@ let classNameNav=`section__nav-categories ${classname}`
                     </h3>
                   </li>
                 </ul>
-
-                
               </div>
-              
             </div>
           </ShowEffectProvider>
         </div>
 
-        <hr className="line" /> 
-      </div> 
+        <hr className="line" />
+      </div>
     </section>
   );
 };
