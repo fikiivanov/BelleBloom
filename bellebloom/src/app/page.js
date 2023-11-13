@@ -6,25 +6,22 @@ import ImageText from "./components/ImageText/ImageText";
 import Products from "./components/Products/Products";
 
 
-
 export default function Home() {
   return (
-	<div className="wrapper">
+	<div  className="wrapper">
 		<Header caller={"hero"}/>
 
 		<div className="main">
 			<Hero/>
-			
+
 			<ImageText/>
-
+			
 			<Products/>
-
+		
 			<Blogs/>
 		</div>
 
 		<Footer/>
 	</div>
-
-  
   )
 }

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 const NavbarMob = ({ isOpen }) => {
   return (
     <motion.nav
+    initial={{x:-350}}
       animate={{ x: isOpen ? 0 : -350 }}
       transition={{ type: "spring", stiffness: 100 }}
       className="nav-mob"
