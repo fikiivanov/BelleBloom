@@ -4,6 +4,7 @@ import style from "./style.scss";
 import Image from "next/image";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 const Hero = () => {
+  
   const framerVariant = {
     hidden: { opacity: 0 },
     show: {

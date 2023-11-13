@@ -13,6 +13,7 @@
         width: 25%;
 
         img {
+            object-fit: cover;
             width: 100%;
         }
         
@@ -58,12 +59,10 @@
          a:hover::after {
             width: 100%;
         }
-    }
-    
+    }    
 }
   
-@media screen and (max-width:900px) {
-   
+@media screen and (max-width:900px) {  
     .section-blogs {
         .blogs {
             flex-wrap: wrap;
@@ -77,15 +76,12 @@
     }
 }
 
-
-
-@media screen and (max-width: 502px) {
-   
+@media screen and (max-width: 502px) {  
     .section-blogs {
         .blogs {
             flex-direction: column;
             .blog {
-                width: 50%;
+                width: 70%;
             }
         }
     }
