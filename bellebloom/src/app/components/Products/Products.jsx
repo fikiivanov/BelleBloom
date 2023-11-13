@@ -3,8 +3,10 @@ import React from "react";
 import style from "./style.scss";
 import Image from "next/image";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
+import Link from "next/link";
 
-const Products = () => {
+const Products = ({categories,title,classname}) => {
+let classNameNav=`section__nav-categories ${classname}`
   const framerVariantRight = {
     hidden: { x: -200, opacity: 0, },
     show: {
@@ -37,29 +39,18 @@ const Products = () => {
         <div className="section__inner">
           <ShowEffectProvider variant={framerVariantLeft}>
             <header className="section__head">
-              <h2>Cosmetics Info</h2>
+              <h2>{title}</h2>
 
-              <nav className="section__nav-categories">
-                <ul>
-                  <li>
-                    <a href="">Blush</a>
-                  </li>
-
-                  <li>
-                    <a href="">Bronzer</a>
-                  </li>
-
-                  <li>
-                    <a href="">Eyebrow</a>
-                  </li>
+              <nav className={classNameNav}>
+                <ul >
+                  {categories.map((e)=>(<li>
+                    <a href="">{e}</a>
+                  </li>))}
                 </ul>
               </nav>
-
-              <a href="" className="">
-                More<span> </span>
-              </a>
-            </header>
+            </header> 
           </ShowEffectProvider>
+
           <ShowEffectProvider variant={framerVariantRight}>
             <div className="section__body">
               <div className="cards">
@@ -134,13 +125,16 @@ const Products = () => {
                     </h3>
                   </li>
                 </ul>
+
+                
               </div>
+              
             </div>
           </ShowEffectProvider>
         </div>
 
-        <hr className="line" />
-      </div>
+        <hr className="line" /> 
+      </div> 
     </section>
   );
 };
