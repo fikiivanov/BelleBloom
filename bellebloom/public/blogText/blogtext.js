@@ -24,7 +24,7 @@ export const blogText = [
       id: 1,
       blogTitle: "Body",
       title: "BodyScrab",
-      image: "/images/BlogImages/Body-Scrab 1.png",
+      image: "/images/BlogImages/Body-scrab 1.png",
     },
     {
       id: 2,
