@@ -4,7 +4,6 @@ import style from "./style.scss";
 import axios from "axios";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 import Link from "next/link";
-import { Spinner } from "react-bootstrap";
 import Card from "../Card/Card";
 
 const Products = ({ categories, title, classname }) => {
