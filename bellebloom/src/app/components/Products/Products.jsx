@@ -4,6 +4,7 @@ import style from "./style.scss";
 import Image from "next/image";
 import axios from "axios";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
+import Link from "next/link";
 
 const Products = ({ categories, title, classname }) => {
   const [data, setData] = useState([]);
@@ -106,6 +107,11 @@ const Products = ({ categories, title, classname }) => {
                 </ul>
               </div>
             </div>
+            {title == "Cosmetics Info" && (
+              <Link href="./products" className="btn btn--reverse ">
+                <span>More </span>
+              </Link>
+            )}
           </ShowEffectProvider>
         </div>
 
