@@ -26,9 +26,7 @@ const Header = ({ caller }) => {
       <header className={headerClassName}>
         <div className="shell">
           <div className="header__inner">
-            <div className="logo">
-              <p>BelleBloom</p>
-            </div>
+          <h3 className="logo"><Link href={"./"}>BelleBloom</Link></h3>
 
             <NavbarDesc />
 

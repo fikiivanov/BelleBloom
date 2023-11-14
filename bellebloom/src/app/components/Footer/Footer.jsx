@@ -2,6 +2,7 @@ import React from 'react'
 import style from "./style.scss"
 import Contact from './Contact'
 import Location from './Location'
+import Link from 'next/link'
 
 
 const Footer = () => {
@@ -12,15 +13,15 @@ const Footer = () => {
                 <div className="footer__content">
                     <div className="footer__nav">
                         <ul>
-                            <li><h4><a href="">Company</a></h4></li>
+                            <li><h4><Link href="/home">Company</Link></h4></li>
     
-                            <li><a href="">Information</a></li>
+                            <li><Link href="/product">Information</Link></li>
     
-                            <li><a href="">Contact</a></li>
+                            <li><Link href="/contact">Contact</Link></li>
     
-                            <li><a href="">About</a></li>
+                            <li><Link href="/about">About</Link></li>
     
-                            <li><a href="">News</a></li>
+                            <li><Link href="/blogs">News</Link></li>
                         </ul>
                     </div>
 
@@ -34,7 +35,7 @@ const Footer = () => {
                 </div>
     
                 <div className="footer__bar">
-                    <h3 className="logo">BelleBloom</h3>
+                    <h3 className="logo"><Link href={"./"}>BelleBloom</Link></h3>
     
                     <div className="copyright">
                         2021@Bellebloom. All Rights Reserved.
