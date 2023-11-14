@@ -9,7 +9,7 @@ export const blogText = [
     {
       id: 2,
       blogTitle: "Face",
-      title: "EyePatches",
+      title: "Eye Patches",
       image: "/images/BlogImages/patches-box.png",
     },
     {
@@ -23,19 +23,19 @@ export const blogText = [
     {
       id: 1,
       blogTitle: "Body",
-      title: "BodyScrab",
+      title: "Body Scrab",
       image: "/images/BlogImages/Body-scrab 1.png",
     },
     {
       id: 2,
       blogTitle: "Body",
-      title: "BodyLotion",
+      title: "Body Lotion",
       image: "/images/BlogImages/Body-lotion.png",
     },
     {
       id: 3,
       blogTitle: "Body",
-      title: "BodyOil",
+      title: "Body Oil",
       image: "/images/BlogImages/Body-oil.png",
     },
   ],

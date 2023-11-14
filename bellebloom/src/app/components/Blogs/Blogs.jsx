@@ -57,7 +57,7 @@ const Blogs = ({ props }) => {
               </motion.li>
             ))}
           </motion.ul>
-          <a href="" className="btn btn--reverse ">
+          <a href="./blogs" className="btn btn--reverse ">
             <span>More </span>
           </a>
         </div>

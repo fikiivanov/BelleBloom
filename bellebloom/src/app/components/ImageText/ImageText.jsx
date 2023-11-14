@@ -2,6 +2,7 @@
 import React from "react";
 import style from "./style.scss";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
+import Link from "next/link";
 
 const ImageText = () => {
   const framerVariant = {
@@ -72,9 +73,9 @@ const ImageText = () => {
               </ShowEffectProvider>
             </div>
 
-            <a href="" className="btn btn--reverse ">
+            <Link href="./about" className="btn btn--reverse ">
               <span>More </span>
-            </a>
+            </Link>
           </div>
 
           <hr className="line" />

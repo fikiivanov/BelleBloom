@@ -32,7 +32,7 @@ const Hero = () => {
 
               <p>Learn more about other cosmetics with BELLEBLOOM</p>
 
-              <a href="" className="btn">
+              <a href="/products" className="btn">
                 <span>More Information </span>
               </a>
             </div>
