@@ -6,6 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import NavbarMob from "./NavbarMob";
 import { motion } from "framer-motion";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
+import Link from "next/link";
 
 const Header = ({ caller }) => {
   const [open, setOpen] = useState(false);
@@ -26,7 +27,8 @@ const Header = ({ caller }) => {
       <header className={headerClassName}>
         <div className="shell">
           <div className="header__inner">
-          <h3 className="logo"><Link href={"./"}>BelleBloom</Link></h3>
+          <h3 className="logo">
+            <Link href={"./"}>BelleBloom</Link></h3>
 
             <NavbarDesc />
 

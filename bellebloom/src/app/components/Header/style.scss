@@ -1,20 +1,19 @@
-
 @import "../../globals.scss";
 
 .header-hero {
-    position: absolute;
-    color: $primary-color;
-    width: 100%;
-    padding: 2rem 0rem;
+  position: absolute;
+  color: $primary-color;
+  width: 100%;
+  padding: 2rem 0rem;
 
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .header__inner {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .nav-desc ul {
+  .nav-desc {
+    ul {
       display: flex;
       flex-wrap: wrap;
       gap: 32px;
@@ -22,13 +21,15 @@
       justify-content: center;
       align-items: center;
     }
-    .header__menu {
-        display: none;
-    }
+  }
 
-    .nav-mob {
-      display: none;
-    }
+  .header__menu {
+    display: none;
+  }
+
+  .nav-mob {
+    display: none;
+  }
 }
 
 .header {
@@ -37,10 +38,15 @@
   width: 100%;
   padding: 2rem 0rem;
 
+  .logo {
+    a {
+      color: $main-color;
+    }
+  }
 
   .header__inner {
     display: flex;
-    
+
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -57,9 +63,9 @@
       color: $main-color;
     }
   }
-  
+
   .header__menu {
-      display: none;
+    display: none;
   }
 
   .nav-mob {
@@ -68,83 +74,94 @@
 }
 
 @media screen and (max-width: 600px) {
-    .header {
-       .nav-desc ul {
+  .header {
+    .nav-desc ul {
+      display: none;
+    }
+
+    .header__menu {
+      display: block;
+    }
+
+    .nav-mob {
+      display: block;
+      position: absolute;
+      backdrop-filter: blur(10px) brightness(80%) contrast(120%);
+      margin-top: 37px;
+      padding-left: 8vw;
+      top: 0;
+      left: 0;
+      height: 80vh;
+      width: 60vw;
+      z-index: 3;
+    }
+
+    .nav-mob ul {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      text-align: left;
+
+      hr {
+        background-color: $main-color;
+      }
+    }
+
+    .nav-mob {
+      ul {
+        a {
+          font-size: calc(var(--font-size) + 8px);
+          text-transform: uppercase;
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  .header-hero {
+    .nav-desc {
+      ul {
         display: none;
-       } 
+      }
+    }
 
-       .header__menu {
-        display: block;
-       }
+    .header__menu {
+      display: block;
+    }
 
-       .nav-mob {
-        display: block;
-        position: absolute;
-        backdrop-filter: blur(10px) brightness(80%) contrast(120%);;
-        margin-top:37px;
-        padding-left: 8vw;
-        top: 0;
-        left: 0;
-        height: 80vh;
-        width: 60vw;
-        z-index: 3;
-       }
+    .nav-mob {
+      display: block;
+      position: absolute;
+      backdrop-filter: blur(10px) brightness(80%) contrast(120%);
+      margin-top: 37px;
+      padding-left: 8vw;
+      top: 0;
+      left: 0;
+      height: 80vh;
+      width: 60vw;
+      z-index: 3;
+    }
 
-       .nav-mob ul {
+    .nav-mob {
+      ul {
         width: 100%;
-        height: 80%;
+        height: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        text-align: left;
-       
-        hr {
-          background-color: $main-color;
-        }
-       }
-       .nav-mob ul a {
-        font-size: calc( var(--font-size) + 8px);
-        text-transform: uppercase;
-        color: $main-color;
-       
-       }
-
-
+      }
     }
 
-    .header-hero {
-      .nav-desc ul {
-       display: none;
-      } 
-
-      .header__menu {
-       display: block;
+    .nav-mob {
+      ul {
+        a {
+          font-size: calc(var(--font-size) + 6px);
+          color: $primary-color;
+          text-transform: uppercase;
+        }
       }
-
-      .nav-mob {
-       display: block;
-       position: absolute;
-       backdrop-filter: blur(10px) brightness(80%) contrast(120%);;
-       margin-top:37px;
-       padding-left: 8vw;
-       top: 0;
-       left: 0;
-       height: 80vh;
-       width: 60vw;
-       z-index: 3;
-      }
-
-      .nav-mob ul {
-       width: 100%;
-       height: 100%;
-       display: flex;
-       justify-content: space-around;
-       flex-direction: column;
-      }
-      .nav-mob ul a {
-       font-size: calc( var(--font-size) + 6px);
-       color: $primary-color;
-       text-transform: uppercase;
-      }
-   }
+    }
+  }
 }

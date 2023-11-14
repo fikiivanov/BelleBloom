@@ -13,7 +13,8 @@ const NavbarMob = ({ isOpen }) => {
     >
 
       <ul>
-      <h3 className="logo">Bellebloom</h3>
+      <h3 className="logo">
+            <Link href={"./"}>BelleBloom</Link></h3>
         <li>
           <Link href={"/"}>Home</Link>
         </li>
