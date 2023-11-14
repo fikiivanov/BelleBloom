@@ -1,0 +1,21 @@
+
+@import "../globals.scss";
+
+/*Contact Page*/ 
+
+.contact--main-color {
+    a{
+    color: $main-color;
+    }
+}
+
+.contact-page-section {
+    .section__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: calc(var(--font-size) + 10px);
+        min-height: 80vh;
+    }
+}

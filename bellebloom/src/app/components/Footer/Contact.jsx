@@ -1,8 +1,11 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({mainColor}) => {
+
+   let classname=`contact contact--${mainColor}`
+
   return (
-    <div className="contact">
+    <div className={classname}>
       <h4>
         <a href="">Get in touch</a>
       </h4>

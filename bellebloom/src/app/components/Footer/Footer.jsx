@@ -1,6 +1,7 @@
 import React from 'react'
 import style from "./style.scss"
 import Contact from './Contact'
+import Location from './Location'
 
 
 const Footer = () => {
