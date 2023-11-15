@@ -1,15 +1,16 @@
 import React from 'react'
-import Blogs from '../components/Blogs/Blogs'
+import Blogs from '../components/BlogCards/BlogCards'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
-import { blogText } from '../../../public/blogText/blogtext'
+import { blogCardsText } from '../../../public/blogsInfo/blogCardsText'
+
 
 const page = () => {
   return (
     <div>
         <Header/>
 
-       {blogText.map((e)=>(<Blogs props={e} />))}
+       {blogCardsText.map((e)=>(<Blogs props={e} />))}
 
         <Footer/>
     </div>

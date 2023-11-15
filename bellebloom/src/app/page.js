@@ -1,6 +1,6 @@
 
-import { blogTextMain } from "../../public/blogText/blogtext";
-import Blogs from "./components/Blogs/Blogs";
+import { blogCardsTextMain } from "../../public/blogsInfo/blogCardsText";
+import Blogs from "./components/BlogCards/BlogCards";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -21,7 +21,7 @@ export default function Home() {
 			
 			<Products categories={["Blush","Bronzer",]} title={"Cosmetics Info"} />
 		
-			<Blogs props={blogTextMain[0]}/>
+			<Blogs props={blogCardsTextMain[0]}/>
 		</div>
 
 		<Footer/>

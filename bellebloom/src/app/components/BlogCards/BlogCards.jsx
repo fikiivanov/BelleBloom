@@ -4,8 +4,10 @@ import style from "./style.scss";
 import Image from "next/image";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Blogs = ({ props }) => {
+  let link=`blogs/${props[0].blogTitle}`
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -33,7 +35,7 @@ const Blogs = ({ props }) => {
   };
   
   return (
-    <section className="section-blogs">
+    <section className="section-blogs-cards">
       <div className="shell">
         <div className="section__inner">
           <ShowEffectProvider variant={framerVariantTitle}>
@@ -43,23 +45,23 @@ const Blogs = ({ props }) => {
             initial="hidden"
             whileInView="show"
             variants={container}
-            className="blogs"
+            className="blog-cards"
           >
             {props.map((card) => (
-              <motion.li variants={item} key={card.id} className="blog">
+              <motion.li variants={item} key={card.id} className="blog-card">
                 <Image width={400} height={400} src={card.image} alt="" />
 
                 <div className="card__text">
                   <h3>{card.title}</h3>
 
-                  <a href="">More</a>
+                  <Link href={link +`#${"masks"}`} >More</Link>
                 </div>
               </motion.li>
             ))}
           </motion.ul>
-          <a href="./blogs" className="btn btn--reverse ">
+          <Link href={link} className="btn btn--reverse ">
             <span>More </span>
-          </a>
+          </Link>
         </div>
 
         <hr className="line" />
