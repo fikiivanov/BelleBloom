@@ -1,6 +1,7 @@
-const blogsText = [
+ export const blogsText = [
   {
     id: 1,
+    blogTilte:"Face",
     title: "Face: Illuminating Elegance",
     imageUrl: "",
     description:
@@ -25,6 +26,7 @@ const blogsText = [
 
   {
     id: 2,
+    blogTilte:"Body",
     title: "Body: Nourish Your Essence",
     imageUrl: "",
     description:
@@ -51,6 +53,7 @@ const blogsText = [
     id: 1,
     title: "Hair: Sculpt Your Tresses with Style",
     imageUrl: "",
+    blogTilte:"Hair",
     description:
       "Step into the realm of hair care, where each strand is a sculpture waiting to be perfected. From bidding farewell to split ends to mastering the art of hair styling and the importance of the right hairbrushing techniques, this section is your guide to sculpting your tresses with style and confidence.",
     children: [

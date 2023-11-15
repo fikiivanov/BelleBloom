@@ -1,12 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import Blog from "@/app/components/Blog/Blog";
+import React, {  } from "react";
+const page = ({params}) => {
 
-const page = () => {
+
 
   return (
-    <section >
+      <Blog name={params.slug}/>
 
-    </section>
   );
 };
 
