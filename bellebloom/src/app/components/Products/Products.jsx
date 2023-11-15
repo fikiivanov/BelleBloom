@@ -7,12 +7,11 @@ import Link from "next/link";
 import Card from "../Card/Card";
 
 const Products = ({ categories, title, classname }) => {
-  
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   let fetchInfo = async (type) => {
-    setLoading(true); // Set loading to true when starting the request
+    setLoading(true);
     try {
       const response = await axios.get(
         `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${type}`
@@ -20,9 +19,9 @@ const Products = ({ categories, title, classname }) => {
       setData(response.data.slice(0, 10).reverse());
     } catch (error) {
       console.error("Error fetching data:", error);
-      setData([]); // or handle the error as needed
+      setData([]);
     } finally {
-      setLoading(false); // Set loading to false regardless of success or error
+      setLoading(false);
     }
   };
 
@@ -90,11 +89,11 @@ const Products = ({ categories, title, classname }) => {
             <div className="section__body">
               <div className="cards">
                 <ul>
-                  {loading?  (
+                  {loading ? (
                     <div className="loader"></div>
                   ) : (
                     data.map((product) => (
-                      <Card product={product} setLoading={setLoading} />
+                      <Card product={product} key={product.id} setLoading={setLoading} />
                     ))
                   )}
                 </ul>

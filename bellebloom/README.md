@@ -5,7 +5,8 @@ https://www.figma.com/file/VMSMTGXIXBFIYACk3bdc7T/Info-Bao%2C-cosmetic-website-d
 add button on product page on main page
 add loading
 
-
+addhover effect and cursor 
+to a
 
 
 
