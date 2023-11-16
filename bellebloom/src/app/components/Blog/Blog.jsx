@@ -42,8 +42,8 @@ const Blog = ({ name }) => {
           <div className="section__body">
 
             {currentBlog.children.map((child) => (
-              <ShowEffectProvider variant={framerVariant}>
-              <div key={useId()} id={child.sectionId} onScroll={()=>false} className="blog">
+              <ShowEffectProvider key={child.sectionId}  variant={framerVariant}>
+              <div id={child.sectionId} onScroll={()=>false} className="blog">
                 <h3>{child.title}</h3>
 
                 <p>{child.description}</p>

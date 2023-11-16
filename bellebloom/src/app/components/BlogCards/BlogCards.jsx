@@ -5,35 +5,10 @@ import Image from "next/image";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { container, framerVariantTitle, item } from "./blogCardAnimations";
 
 const BlogCards = ({ props }) => {
-let link =`blogs/${props[0].blogTitle}`
-console.log(link)
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-  };
-
-  const framerVariantTitle = {
-    hidden: { y: -100, opacity: 0 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-      },
-    },
-  };
+  let link = `blogs/${props[0].blogTitle}`;
 
   return (
     <section className="section-blog-cards">
@@ -55,12 +30,27 @@ console.log(link)
                 <div className="card__text">
                   <h3>{card.title}</h3>
 
-                  <Link href={link=="blogs/Cosmetic Info"?`/blogs/${card.title.toLowerCase()}`: `${link.toLowerCase().replace(/\s/g, '')}#${card.title.toLowerCase().replace(/\s/g, '')}`}>More</Link>
+                  <Link
+                    href={
+                      link == "blogs/Cosmetic Info"
+                        ? `/blogs/${card.title.toLowerCase()}`
+                        : `${link.toLowerCase().replace(/\s/g, "")}#${card.title
+                            .toLowerCase()
+                            .replace(/\s/g, "")}`
+                    }
+                  >
+                    More
+                  </Link>
                 </div>
               </motion.li>
             ))}
           </motion.ul>
-          <Link href={`blogs/${props[0].blogTitle.toLowerCase().replace(/\s/g, '')}`} className="btn btn--reverse ">
+          <Link
+            href={`blogs/${props[0].blogTitle
+              .toLowerCase()
+              .replace(/\s/g, "")}`}
+            className="btn btn--reverse "
+          >
             <span>More </span>
           </Link>
         </div>

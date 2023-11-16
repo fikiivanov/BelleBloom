@@ -3,8 +3,9 @@
 
 
 const nextConfig = {
-
-  images: {
+  reactStrictMode: true,
+  output: 'export',
+  images: { unoptimized:true,
     domains: ["127.0.0.1"],
     remotePatterns: [
       {

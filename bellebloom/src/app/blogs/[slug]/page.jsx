@@ -1,13 +1,18 @@
-"use client";
+
 import Blog from "@/app/components/Blog/Blog";
-import { useParams} from 'next/navigation'
+
 import React from "react";
-const page = () => {
 
-  const {slug} = useParams()
+export function generateStaticParams() {
+  return [{ slug:'body' }, { slug: 'face' },{ slug: '' }, { slug: 'hair' }]
+}
 
-  console.log(slug)
-  return <Blog name={slug} />;
+const page = ({params}) => {
+
+
+
+
+  return <Blog name={params.slug} />;
 };
 
 export default page;
