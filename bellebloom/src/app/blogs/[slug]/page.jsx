@@ -2,31 +2,17 @@
 import Blog from "@/app/components/Blog/Blog";
 import React, {  } from "react";
 
-export async function getStaticPaths() {
-  return {
-    paths: [
-      {
-        params: {
-         slug:"face"
-        },
-        params: {
-          slug:"hair"
-         },
-         params: {
-          slug:"body"
-         },
-      }, // See the "paths" section below
-    ],
-    fallback: true, // false or "blocking"
-  }
+export function generateStaticParams() {
+  return [{ name: '1' }, { name: '2' }, { name: '3' }]
 }
  
+ 
 const page = ({params}) => {
-
+const {name}=params
 
 
   return (
-      <Blog name={params.slug}/>
+      <Blog name={name}/>
 
   );
 };
