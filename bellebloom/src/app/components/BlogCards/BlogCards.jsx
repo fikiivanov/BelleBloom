@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Blogs = ({ props }) => {
-  let link=`blogs/${props[0].blogTitle}`
+let link =`blogs/${props[0].blogTitle}`
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -33,7 +34,7 @@ const Blogs = ({ props }) => {
       },
     },
   };
-  
+
   return (
     <section className="section-blogs-cards">
       <div className="shell">
@@ -54,12 +55,12 @@ const Blogs = ({ props }) => {
                 <div className="card__text">
                   <h3>{card.title}</h3>
 
-                  <Link href={link +`#${"masks"}`} >More</Link>
+                  <Link href={`${link.toLowerCase()}#${card.title.toLowerCase()}`}>More</Link>
                 </div>
               </motion.li>
             ))}
           </motion.ul>
-          <Link href={link} className="btn btn--reverse ">
+          <Link href={`blogs/${props[0].blogTitle.toLowerCase()}`} className="btn btn--reverse ">
             <span>More </span>
           </Link>
         </div>

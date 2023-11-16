@@ -1,5 +1,5 @@
 
-import { blogCardsTextMain } from "../../public/blogsInfo/blogCardsText";
+import { blogCardsTextMain } from "../../public/blogsInfo/blogsInfo";
 import Blogs from "./components/BlogCards/BlogCards";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";

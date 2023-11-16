@@ -1,7 +1,7 @@
  export const blogsText = [
   {
     id: 1,
-    blogTilte:"Face",
+    blogTitle:"Face",
     title: "Face: Illuminating Elegance",
     imageUrl: "",
     description:
@@ -26,7 +26,7 @@
 
   {
     id: 2,
-    blogTilte:"Body",
+    blogTitle:"Body",
     title: "Body: Nourish Your Essence",
     imageUrl: "",
     description:
@@ -53,7 +53,7 @@
     id: 1,
     title: "Hair: Sculpt Your Tresses with Style",
     imageUrl: "",
-    blogTilte:"Hair",
+    blogTitle:"Hair",
     description:
       "Step into the realm of hair care, where each strand is a sculpture waiting to be perfected. From bidding farewell to split ends to mastering the art of hair styling and the importance of the right hairbrushing techniques, this section is your guide to sculpting your tresses with style and confidence.",
     children: [
@@ -73,4 +73,77 @@
       },
     ],
   },
+];
+
+
+
+export const blogCardsText = [
+  [
+    {
+      id: 1,
+      blogTitle: "Face",
+      title: "Cleansers",
+      image: "/images/BlogImages/Cleanser 1.png",
+    },
+    {
+      id: 2,
+      blogTitle: "Face",
+      title: "Eye Patches",
+      image: "/images/BlogImages/patches-box.png",
+    },
+    {
+      id: 3,
+      blogTitle: "Face",
+      title: "Мasks",
+      image: "/images/BlogImages/mask 1.png",
+    },
+  ],
+  [
+    {
+      id: 1,
+      blogTitle: "Body",
+      title: "Body Scrab",
+      image: "/images/BlogImages/Body-scrab 1.png",
+    },
+    {
+      id: 2,
+      blogTitle: "Body",
+      title: "Body Lotion",
+      image: "/images/BlogImages/Body-lotion.png",
+    },
+    {
+      id: 3,
+      blogTitle: "Body",
+      title: "Body Oil",
+      image: "/images/BlogImages/Body-oil.png",
+    },
+  ],
+  [
+    {
+      id: 1,
+      blogTitle: "Hair",
+      title: "Split Ends",
+      image: "/images/BlogImages/hairbrush-box.png",
+    },
+    {
+      id: 2,
+      blogTitle: "Hair",
+      title: "Hair Styling",
+      image: "/images/BlogImages/Hair-Styling.png",
+    },
+    {
+      id: 3,
+      blogTitle: "Hair",
+      title: "Hairbrush",
+      image: "/images/BlogImages/Hair-split ends.png",
+    },
+  ],
+];
+
+export const blogCardsTextMain = [
+  [
+    {  id: 1, blogTitle: "Cosmetic Info", title: "Face", image: "/images/BlogImages/acne.png" },
+    { id: 2, blogTilte: "Cosmetic Info", title: "Body", image: "/images/BlogImages/clay-mask.png" },
+    { id: 3, blogTitle: "Cosmetic Info", title: "Hair", image: "/images/BlogImages/freckles.png" },
+  ],
 ];

@@ -2,7 +2,8 @@ import React from 'react'
 import Blogs from '../components/BlogCards/BlogCards'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
-import { blogCardsText } from '../../../public/blogsInfo/blogCardsText'
+import { blogCardsText } from '../../../public/blogsInfo/blogsInfo'
+
 
 
 const page = () => {

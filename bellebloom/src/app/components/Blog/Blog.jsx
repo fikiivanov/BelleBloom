@@ -1,8 +1,8 @@
 import React from "react";
-import { blogsText } from "../../../../public/blogsInfo/blogsText";
+import { blogsText } from "../../../../public/blogsInfo/blogsInfo";
 
 const Blog = ({ name }) => {
-  let currentBlog = blogsText.find((el) => el.blogTilte == name);
+  let currentBlog = blogsText.find((el) => el.blogTitle.toLowerCase() == name);
 
   return (
     <section className="blog-page">
@@ -18,7 +18,7 @@ const Blog = ({ name }) => {
 
           <div className="section__body">
             {currentBlog.children.map((child) => (
-              <div className="blog">
+              <div key={child.id} className="blog">
                 <h3>{child.title}</h3>
 
                 <p>{child.description}</p>
