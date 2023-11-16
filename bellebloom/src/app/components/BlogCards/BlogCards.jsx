@@ -55,12 +55,12 @@ let link =`blogs/${props[0].blogTitle}`
                 <div className="card__text">
                   <h3>{card.title}</h3>
 
-                  <Link href={`${link.toLowerCase()}#${card.title.toLowerCase()}`}>More</Link>
+                  <Link href={`${link.toLowerCase().replace(/\s/g, '')}#${card.title.toLowerCase().replace(/\s/g, '')}`}>More</Link>
                 </div>
               </motion.li>
             ))}
           </motion.ul>
-          <Link href={`blogs/${props[0].blogTitle.toLowerCase()}`} className="btn btn--reverse ">
+          <Link href={`blogs/${props[0].blogTitle.toLowerCase().replace(/\s/g, '')}`} className="btn btn--reverse ">
             <span>More </span>
           </Link>
         </div>

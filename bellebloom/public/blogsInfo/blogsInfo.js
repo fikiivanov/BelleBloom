@@ -3,12 +3,13 @@
     id: 1,
     blogTitle:"Face",
     title: "Face: Illuminating Elegance",
-    imageUrl: "",
+    imageUrl: "/images/BlogImages/face.jpg",
     description:
       "Elevate your skincare ritual with our Face section, where each product is a beacon of illuminating elegance. From the refreshing embrace of Cleansers to the rejuvenating magic of Eye Patches and transformative allure of Masks, this chapter in your beauty journey promises a radiant complexion that mirrors your inner glow. Dive into the world of skincare with captivating products designed to nurture and enhance your unique beauty. Let your face be the canvas for a masterpiece that radiates health and vitality.",
     children: [
       {
         id: 1,
+        sectionId:"cleansers",
         title: "Cleansers: Purify and Renew",
         image: "/images/BlogImages/mask 1.png",
         description:
@@ -16,6 +17,7 @@
       },
       {
         id: 2,
+        sectionId:"eyepatches",
         title: "Eye Patches and Masks: Rejuvenate and Transform",
         description:
           "Indulge in the enchanting rituals of Eye Patches and Masks, designed to rejuvenate and transform your skin. Picture moments of serenity as under-eye wonders erase signs of fatigue, and masks cocoon your face in a spa-like experience. Beyond skincare, these products become your trusted companions in the pursuit of a luminous complexion. Discover the transformative power of these rituals, and let your face tell a story of revitalization and timeless beauty.",
@@ -28,12 +30,13 @@
     id: 2,
     blogTitle:"Body",
     title: "Body: Nourish Your Essence",
-    imageUrl: "",
+    imageUrl: "/images/BlogImages/body.jpg",
     description:
       "Welcome to the sanctuary of self-love and care with our Body section, a haven where body scrubs, lotions, and oils become the nourishing essences that celebrate your unique beauty. This chapter is an invitation to indulge in a holistic experience that transcends the ordinary, leaving your body pampered and your spirit uplifted..",
     children: [
       {
         id: 1,
+        sectionId:"bodyscrub",
         title: "Body Scrubs: Awaken Silken Skin",
         image: "/images/BlogImages/mask 1.png",
         description:
@@ -42,6 +45,7 @@
       {
         id: 2,
         title: "Body Lotions and Oils: Luxurious Hydration",
+        sectionId:"bodylotion",
         description:
           "Indulge in the opulent opus of Body Lotions and Oils, where skincare transforms into a luxurious self-care experience. These products are not mere moisturizers; they are rituals that lavish your body in silky serenity. Envision your body as a canvas, and these lotions and oils as strokes of indulgence, providing deep nourishment. Learn the art of hydration as you embrace the opulent side of self-care, creating a routine that transcends the ordinary, leaving your skin gloriously pampered.",
         image: "/images/BlogImages/mask 1.png",
@@ -52,13 +56,14 @@
   {
     id: 1,
     title: "Hair: Sculpt Your Tresses with Style",
-    imageUrl: "",
+    imageUrl: "/images/BlogImages/hair.jpg",
     blogTitle:"Hair",
     description:
       "Step into the realm of hair care, where each strand is a sculpture waiting to be perfected. From bidding farewell to split ends to mastering the art of hair styling and the importance of the right hairbrushing techniques, this section is your guide to sculpting your tresses with style and confidence.",
     children: [
       {
         id: 1,
+        sectionId:"splitends",
         title: "Split Ends: Embrace Hair Vitality",
         image: "/images/BlogImages/mask 1.png",
         description:
@@ -67,6 +72,7 @@
       {
         id: 2,
         title: "Hair Styling and Brushing: Express Your Signature Style",
+        sectionId:"hairstyling",
         description:
           "Elevate your hair game with the Hair Styling and Brushing section, where each strand becomes a canvas for self-expression. From elegant updos to casual chic waves, these insights provide tools and techniques for crafting your signature style. Learn how the right brush becomes your styling companion, turning every day into a celebration of good hair and boundless confidence. Allow your hair's narrative to be a testament to your unique style, where every chapter is a brushstroke that expresses your individuality.",
         image: "/images/BlogImages/mask 1.png",
@@ -102,8 +108,8 @@ export const blogCardsText = [
     {
       id: 1,
       blogTitle: "Body",
-      title: "Body Scrab",
-      image: "/images/BlogImages/Body-scrab 1.png",
+      title: "Body Scrub",
+      image: "/images/BlogImages/Body-scrub 1.png",
     },
     {
       id: 2,

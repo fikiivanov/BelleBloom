@@ -1,0 +1,71 @@
+@import "../../globals.scss";
+
+.blog-page {
+    .section__inner {
+        .section__header {
+            position: relative;
+            margin-bottom: calc(var(--font-size) + 30px);
+            .section__image {
+                position: relative;
+                height: 60vh;
+                z-index: 1;
+                margin-bottom: calc(var(--font-size) + 10px);
+          
+                img {
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+            .section__image::after {
+                position: absolute;
+                content: "dsad";
+                width: 100%;
+                height: 60vh;
+                z-index: 2;
+                background-color: $main-color;
+                opacity: .2;
+                top: 0;
+                left: 0;
+              
+            }
+
+            h2 {
+                margin-bottom: calc(var(--font-size) );
+            }
+        }
+        .section__body {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: calc(var(--font-size) + 40px);
+            gap: calc(var(--font-size) + 50px);
+            
+            h3 {
+                margin-bottom:calc(var(--font-size) + 10px);
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+   .blog-page
+   {
+        .section__inner {
+            .section__header {
+                .section__image {
+                    height: 50vh;
+                }
+                .section__image::after {
+                    height: 50vh;
+                }
+            }
+        }
+   }
+  }
