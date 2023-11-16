@@ -22,19 +22,19 @@ const NavbarDesc = () => {
           </li>
 
           <li>
-            <Link href={"about"}>About Us</Link>
+            <Link href={"/about"}>About Us</Link>
           </li>
 
           <li>
-            <Link href={"blogs"}>Blogs</Link>
+            <Link href={"/blogs"}>Blogs</Link>
           </li>
 
           <li>
-            <Link href={"products"}>Cosmetics Info</Link>
+            <Link href={"/products"}>Cosmetics Info</Link>
           </li>
 
           <li>
-            <Link href={"contact"}>Contact </Link>
+            <Link href={"/contact"}>Contact </Link>
           </li>
         </ul>
       </nav>
