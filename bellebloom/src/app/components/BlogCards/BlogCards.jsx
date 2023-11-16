@@ -6,7 +6,7 @@ import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Blogs = ({ props }) => {
+const BlogCards = ({ props }) => {
 let link =`blogs/${props[0].blogTitle}`
 console.log(link)
   const container = {
@@ -71,4 +71,4 @@ console.log(link)
   );
 };
 
-export default Blogs;
+export default BlogCards;

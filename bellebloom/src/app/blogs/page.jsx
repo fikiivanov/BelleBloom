@@ -1,8 +1,8 @@
 import React from 'react'
-import Blogs from '../components/BlogCards/BlogCards'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import { blogCardsText } from '../../../public/blogsInfo/blogsInfo'
+import BlogCards from '../components/BlogCards/BlogCards'
 
 
 
@@ -11,7 +11,7 @@ const page = () => {
     <div>
         <Header/>
 
-       {blogCardsText.map((e)=>(<Blogs props={e} />))}
+       {blogCardsText.map((e)=>(<BlogCards key={e.blogTitle} props={e} />))}
 
         <Footer/>
     </div>
