@@ -21,22 +21,22 @@ const NavbarMob = ({ isOpen }) => {
         <hr />
 
         <li>
-          <Link href={"about"}>About Us</Link>
+          <Link href={"/about"}>About Us</Link>
         </li>
         <hr />
 
         <li>
-          <Link href={"blogs"}>Blogs</Link>
+          <Link href={"/blogs"}>Blogs</Link>
         </li>
         <hr />
 
         <li>
-          <Link href={"products"}>Cosmetics Info</Link>
+          <Link href={"/products"}>Cosmetics Info</Link>
         </li>
         <hr />
 
         <li>
-          <Link href={"contact"}>Contact </Link>
+          <Link href={"/contact"}>Contact </Link>
         </li>
         <hr />
       </ul>
