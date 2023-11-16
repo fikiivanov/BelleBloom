@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Blogs = ({ props }) => {
 let link =`blogs/${props[0].blogTitle}`
-
+console.log(link)
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -36,7 +36,7 @@ let link =`blogs/${props[0].blogTitle}`
   };
 
   return (
-    <section className="section-blogs-cards">
+    <section className="section-blog-cards">
       <div className="shell">
         <div className="section__inner">
           <ShowEffectProvider variant={framerVariantTitle}>
@@ -55,7 +55,7 @@ let link =`blogs/${props[0].blogTitle}`
                 <div className="card__text">
                   <h3>{card.title}</h3>
 
-                  <Link href={`${link.toLowerCase().replace(/\s/g, '')}#${card.title.toLowerCase().replace(/\s/g, '')}`}>More</Link>
+                  <Link href={link=="blogs/Cosmetic Info"?`/blogs/${card.title.toLowerCase()}`: `${link.toLowerCase().replace(/\s/g, '')}#${card.title.toLowerCase().replace(/\s/g, '')}`}>More</Link>
                 </div>
               </motion.li>
             ))}

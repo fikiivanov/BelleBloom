@@ -148,8 +148,8 @@ export const blogCardsText = [
 
 export const blogCardsTextMain = [
   [
-    {  id: 1, blogTitle: "Cosmetic Info", title: "Face", image: "/images/BlogImages/acne.png" },
+    {  id: 1, blogTitle: "Cosmetic Info", title: "Face", image: "/images/BlogImages/acne.png" , },
     { id: 2, blogTilte: "Cosmetic Info", title: "Body", image: "/images/BlogImages/clay-mask.png" },
-    { id: 3, blogTitle: "Cosmetic Info", title: "Hair", image: "/images/BlogImages/freckles.png" },
+    { id: 3, blogTitle: "Cosmetic Info", title: "Hair", image: "/images/BlogImages/freckles.png",},
   ],
 ];
