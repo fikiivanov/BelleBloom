@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+import React, { useId } from "react";
+
 import style from "./style.scss"
 import { blogsText } from "../../../../public/blogsInfo/blogsInfo";
 import Header from "../Header/Header";
@@ -41,7 +43,7 @@ const Blog = ({ name }) => {
 
             {currentBlog.children.map((child) => (
               <ShowEffectProvider variant={framerVariant}>
-              <div key={child.id} id={child.sectionId} onScroll={false} className="blog">
+              <div key={useId()} id={child.sectionId} onScroll={()=>false} className="blog">
                 <h3>{child.title}</h3>
 
                 <p>{child.description}</p>
