@@ -1,100 +1,104 @@
 @import "../../globals.scss";
 
 .section-products {
-  margin: 50px 0px;
-  background-color: #fff;
+    margin: 50px 0px;
+    background-color: #fff;
 
-  .section__head {
-    text-align: center;
-  }
-
-  .section__inner a {
-    color: $main-color;
-    position: relative;
-    text-decoration: none;
-    transition: border-bottom 0.3s ease;
-  }
-
-  .section__inner a::after {
-    content: "";
-    position: absolute;
-    background-color: $main-color;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: width 0.3s ease;
-  }
-
-  .section__inner a:hover::after {
-    width: 100%;
-  }
-
-  .section__nav-categories {
-    padding: 20px 0px;
-  }
-
-  .section__nav-categories ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .product-page ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px 20px 0 20px;
-  }
-  /* cards */
-
-  .cards {
-    padding: 50px 0px;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 70px;
+    .section__head {
+        text-align: center;
     }
 
-    .card {
-      cursor: pointer;
-      position: relative;
-      text-align: center;
-      width: 20%;
-
-      img {
-        width: 90%;
-        height: 80%;
-        object-fit: contain;
-      }
+    .section__inner a {
+        color: $main-color;
+        position: relative;
+        text-decoration: none;
+        transition: border-bottom 0.3s ease;
     }
-  }
+
+    .section__inner a::after {
+        content: "";
+        position: absolute;
+        background-color: $main-color;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: width 0.3s ease;
+    }
+
+    .section__inner a:hover::after {
+        width: 100%;
+    }
+
+    .section__nav-categories {
+        padding: 20px 0px;
+    }
+
+    .section__nav-categories ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .product-page ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 20px 0 20px;
+    }
+
+    /* cards */
+
+    .cards {
+        padding: 50px 0px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 70px;
+        }
+
+        .card {
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            width: 20%;
+
+            img {
+                width: 90%;
+                height: 80%;
+                object-fit: contain;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .section-products {
-    /* cards */
-    .cards {
-      ul {
-        gap: 50px;
-      }
-      .card {
-        width: 60%;
-      }
+    .section-products {
+
+        /* cards */
+        .cards {
+            ul {
+                gap: 50px;
+            }
+
+            .card {
+                width: 60%;
+            }
+        }
     }
-  }
 }
 
 @media screen and (max-width: 900px) {
-  .section-products {
-    /* cards */
-    .cards {
-      .card {
-        width: 40%;
-      }
+    .section-products {
+
+        /* cards */
+        .cards {
+            .card {
+                width: 40%;
+            }
+        }
     }
-  }
 }
