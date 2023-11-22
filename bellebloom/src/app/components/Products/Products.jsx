@@ -1,14 +1,23 @@
 "use client";
 import React, { useEffect, useId, useState } from "react";
+import {useRouter}  from 'next/navigation'
 import style from "./style.scss";
 import axios from "axios";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 import Link from "next/link";
 import Card from "../Card/Card";
 
+
+
 const Products = ({ categories, title, classname }) => {
+
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const router= useRouter()
+ // Return a list of `params` to populate the [slug] dynamic segment
+
+// Multiple versions of this page will be statically generated
+// using the `params` returned by `generateStaticParams`
 
   let fetchInfo = async (type) => {
     setLoading(true);
@@ -92,8 +101,8 @@ const Products = ({ categories, title, classname }) => {
                   {loading ? (
                     <div className="loader"></div>
                   ) : (
-                    data.map((product) => (
-                      <Card product={product} key={product.id} setLoading={setLoading} />
+                    data.map((product) => (          
+                      <Card product={product} key={product.id} setLoading={setLoading}  />
                     ))
                   )}
                 </ul>

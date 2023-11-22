@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./style.scss";
 import Image from "next/image";
 import ShowEffectProvider from "@/app/providers/ShowEffectProvider";
 const Hero = () => {
-  
+
   const framerVariant = {
     hidden: { opacity: 0 , y:-20},
     show: {
