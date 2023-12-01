@@ -11,12 +11,15 @@ export async function generateStaticParams() {
   });
 }
 
-const page = ({ params }) => {
-  console.log(params);
+const page = ({ searchParams }) => {
+
   return (
     <div>
       <Header caller={"header"} />
-      {params.id}
+          <div>{searchParams.id}</div>
+          
+
+        {/* Trending Products */}
 
       <Footer />
     </div>

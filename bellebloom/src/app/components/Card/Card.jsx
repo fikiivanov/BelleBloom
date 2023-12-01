@@ -8,7 +8,10 @@ const Card = ({ product }) => {
 
     return (
         <li key={product.id} props={product} className="card" >
-            <Link href={`/products/${product.id}`}>
+            <Link href={{
+                pathname: `/products/${product.id}`,
+                query: product    
+            }}>
                 <Image
                     onError={(e) => {
                         e.target.onerror = null;
