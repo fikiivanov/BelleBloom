@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
 
                         <p>{product.description}</p>
 
-                        <p>Brand:  {product.brand.toUpperCase()}</p>
+                        <p>Brand:  {product?.brand?.toUpperCase()}</p>
 
                         <Link className='btn btn--reverse' href={product.product_link}>Buy from here</Link>
                     </div>
