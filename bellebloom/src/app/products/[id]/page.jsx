@@ -27,3 +27,5 @@ const page = ({ searchParams }) => {
     );
 };
 export default page;
+
+export const dynamic = 'force-dynamic'
