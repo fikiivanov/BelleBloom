@@ -12,7 +12,7 @@ export async function generateStaticParams() {
     });
 }
 
-const page = ({ searchParams }) => {
+const Page = ({ searchParams }) => {
 
     return (
         <div>
@@ -26,6 +26,5 @@ const page = ({ searchParams }) => {
         </div>
     );
 };
-export default page;
-
-export const dynamic = 'force-dynamic'
+export default Page;
+export const dynamic = 'force-static'
