@@ -17,12 +17,10 @@ const page = ({ searchParams }) => {
     return (
         <div>
             <Header caller={"header"} />
-            
-            <div>{searchParams.id}</div>
 
-            <ProductCard product={searchParams}></ProductCard>
+            <ProductCard product={searchParams}/>
 
-            {/* Trending Products */}
+            {/* Trending Products use searchParams to get and show realated products */}
 
             <Footer />
         </div>

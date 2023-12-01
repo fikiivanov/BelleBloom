@@ -6,12 +6,11 @@ import Link from 'next/link';
 
 const ProductCard = ({ product }) => {
 
-    console.log(product)
     return (
-
         <section className="section-product-card">
             <div className="shell">
                 <div className="section__inner">
+                   
                     <Image
                         src={product.image_link}
                         width={500}
@@ -23,25 +22,17 @@ const ProductCard = ({ product }) => {
                         <h2>{product.name}</h2>
 
                         <hr />
+
                         <p>Description:</p>
 
-                        <p>
+                        <p>{product.description}</p>
 
-                        </p>
+                        <p>Brand:  {product.brand.toUpperCase()}</p>
 
-                        <p>Brand:</p>
-
-                        <p></p>
-
-                        <p>Where to buy it:</p>
-
-                        <Link href={product.product_link}  >buy it now</Link>
-
-
+                        <Link className='btn btn--reverse' href={product.product_link}>Buy from here</Link>
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }

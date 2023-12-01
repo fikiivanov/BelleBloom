@@ -1,1 +1,55 @@
 @import "../../globals.scss";
+.section-product-card {
+    padding: 1rem 0rem 2.5rem 0rem;
+    a {
+        text-transform: uppercase;
+    }
+
+    .section__inner {
+        text-align: center;
+       
+        .section__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+
+             h2 {
+            margin-top: 3rem;
+             }   
+
+            p:first-of-type {
+                padding: 1rem 0 0 0 ;
+            }
+
+            p:nth-of-type(odd) {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+  .section-product-card {
+    padding: 4rem 0rem;
+
+    .section__inner {
+        display: flex;
+        gap:4rem;
+
+        img {
+            padding: 2rem 0rem;
+        }
+
+        .section__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+}
+}
