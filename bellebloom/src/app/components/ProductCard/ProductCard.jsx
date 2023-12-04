@@ -1,37 +1,72 @@
-
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import style from './style.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import Products from '../Products/Products';
+import axios from 'axios';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ productData }) => {
+
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    let fetchInfo = async () => {
+        setLoading(true);
+        try {
+            const response = await axios.get(
+                `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${productData[1]}&product_type=${productData[2]}`
+            );
+            setData(
+                response.data.find(obj => obj.id == productData[0])
+            );
+
+        } catch (error) {
+            console.error("Error fetching data:", error);
+            setData([]);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    useEffect(() => {
+        fetchInfo()
+    }, [])
 
     return (
         <section className="section-product-card">
             <div className="shell">
-                <div className="section__inner">
-                   
-                    <Image
-                        src={product.image_link}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                    />
 
-                    <div className="section__text">
-                        <h2>{product.name}</h2>
+                {data.id ? (
+                    <div className="section__inner">
 
-                        <hr />
+                        <Image
+                            src={data.image_link}
+                            width={500}
+                            height={500}
+                            alt="Picture of the author"
+                        />
 
-                        <p>Description:</p>
+                        <div className="section__text">
+                            <h2>{data.name}</h2>
 
-                        <p>{product.description}</p>
+                            <hr />
 
-                        <p>Brand:  {product?.brand?.toUpperCase()}</p>
+                            <p>Description:</p>
 
-                        <Link className='btn btn--reverse' href={product.product_link}>Buy from here</Link>
+                            <p>{data.description}</p>
+
+                            <p>Brand:{data.brand.toUpperCase()}</p>
+
+
+                        </div>
                     </div>
-                </div>
+
+                ) : (
+                    <div className="loader"></div>
+                )
+                }
+
             </div>
         </section>
     )

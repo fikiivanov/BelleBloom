@@ -9,7 +9,7 @@ const Card = ({ product }) => {
     return (
         <li key={product.id} props={product} className="card" >
             <Link href={
-                `/products/${product.id}`
+                `/products/${product.id}/${product.brand}/${product.product_type}`
             }>
                 <Image
                     onError={(e) => {
