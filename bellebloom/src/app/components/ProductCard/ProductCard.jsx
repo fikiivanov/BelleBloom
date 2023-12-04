@@ -16,8 +16,8 @@ const ProductCard = ({ product }) => {
 
                     <Image
                         src={product.image_link}
-                        width={500}
-                        height={500}
+                        width={370}
+                        height={370}
                         alt="Picture of the author"
                     />
 
@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
 
                         <p>{product.description}</p>
 
-                        <p>Brand:{product.brand.toUpperCase()}</p>
+                        <p>Brand: {product.brand.toUpperCase()}</p>
 
                     </div>
                 </div>:<div className='loader'> </div>}
