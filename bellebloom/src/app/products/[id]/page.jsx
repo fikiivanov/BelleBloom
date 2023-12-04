@@ -1,7 +1,6 @@
 'use client'
 import Footer from "@/app/components/Footer/Footer";
 import Header from "@/app/components/Header/Header";
-import ProductCard from "@/app/components/ProductCard/ProductCard";
 import { useParams } from "next/navigation";
 
 
