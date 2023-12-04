@@ -8,13 +8,13 @@ export async function generateStaticParams() {
     ).then((res) => res.json());
 
     return posts.map((post) => {
-        return { id: `${post.id}/${post.brand}/${post.product_type}` };
+        return { id: [`${post.id}`,`${post.brand}`,`${post.product_type}`] };
     });
 }
 
 
 export default async function Page({ params }) {
-console.log()
+
     return (
         <div>
             <Header caller={"header"} />
