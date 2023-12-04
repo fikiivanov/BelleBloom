@@ -1,73 +1,39 @@
-'use client'
-import React, { useEffect, useState } from 'react'
+
+import React, from 'react'
 import style from './style.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import Products from '../Products/Products';
-import axios from 'axios';
-
-const ProductCard = ({ productData }) => {
 
 
-    const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(false);
+const ProductCard = ({ product }) => {
 
-    let fetchInfo = async () => {
-        setLoading(true);
-        try {
-            const response = await axios.get(
-                `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${productData[1]}&product_type=${productData[2]}`
-            );
-            setData(
-                response.data.find(obj => obj.id == productData[0])
-            );
-
-        } catch (error) {
-            console.error("Error fetching data:", error);
-            setData([]);
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    useEffect(() => {
-        fetchInfo()
-    }, [])
 
     return (
         <section className="section-product-card">
             <div className="shell">
+                {product ? <div className="section__inner">
 
-                {data.id ? (
-                    <div className="section__inner">
+                    <Image
+                        src={product.image_link}
+                        width={500}
+                        height={500}
+                        alt="Picture of the author"
+                    />
 
-                        <Image
-                            src={data.image_link}
-                            width={500}
-                            height={500}
-                            alt="Picture of the author"
-                        />
+                    <div className="section__text">
+                        <h2>{product.name}</h2>
 
-                        <div className="section__text">
-                            <h2>{data.name}</h2>
+                        <hr />
 
-                            <hr />
+                        <p>Description:</p>
 
-                            <p>Description:</p>
+                        <p>{product.description}</p>
 
-                            <p>{data.description}</p>
+                        <p>Brand:{product.brand.toUpperCase()}</p>
 
-                            <p>Brand:{data.brand.toUpperCase()}</p>
-
-
-                        </div>
                     </div>
-
-                ) : (
-                    <div className="loader"></div>
-                )
-                }
-
+                </div>:<div className='loader'> </div>}
             </div>
         </section>
     )
