@@ -7,14 +7,11 @@ export async function generateStaticParams() {
         "https://makeup-api.herokuapp.com/api/v1/products.json"
     ).then((res) => res.json());
 
-
     return posts.map((post) => {
-        return {
-            path: `/products/${post.id}/${post.brand}/${post.product_type}`
-          
-        };
+        return { id: `${post.id}/${post.brand}/${post.product_type}` };
     });
 }
+
 
 export default async function Page({ params }) {
 console.log()
