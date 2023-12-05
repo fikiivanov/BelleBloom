@@ -1,0 +1,25 @@
+@import "../../globals.scss";
+
+.section-other-products {
+    margin-bottom: 2rem;
+    .section__inner {
+        h3 {
+            text-align: center;
+            padding: 1.5rem 0rem;
+        }
+
+        .swiper-wrapper {
+            justify-content: space-around;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                color: $main-color;
+            }
+        }
+    }
+}

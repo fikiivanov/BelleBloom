@@ -1,25 +1,27 @@
 @import "../../globals.scss";
+
 .section-product-card {
-    padding: 1rem 0rem 2.5rem 0rem;
+    padding: 1rem 0 0 0;
+
     a {
         text-transform: uppercase;
     }
 
     .section__inner {
         text-align: center;
-       
+
         .section__text {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             text-align: center;
 
-             h2 {
-            margin-top: 3rem;
-             }   
+            h2 {
+                margin-top: 3rem;
+            }
 
             p:first-of-type {
-                padding: 1rem 0 0 0 ;
+                padding: 1rem 0 0 0;
             }
 
             p:nth-of-type(odd) {
@@ -30,26 +32,26 @@
 }
 
 @media screen and (min-width: 992px) {
-  .section-product-card {
-    padding: 4rem 0rem;
+    .section-product-card {
+        padding: 4rem 0;
 
-    .section__inner {
-        display: flex;
-        gap:4rem;
-
-        img {
-            padding: 2rem 0rem;
-        }
-
-        .section__text {
+        .section__inner {
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            gap: 4rem;
 
-            h2 {
-                margin: 0;
+            img {
+                padding: 2rem 0;
+            }
+
+            .section__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h2 {
+                    margin: 0;
+                }
             }
         }
     }
-}
 }
