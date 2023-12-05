@@ -15,7 +15,7 @@ const OtherProducts = ({ products }) => {
         <section className="section-other-products">
             <div className="shell">
                 <div className="section__inner">
-                    <h3>{`Discover More ${capitalizeFirstLetter(products[0].product_type)}: Where Beauty Meets Brilliance!`}</h3>
+                    <h3>{`Discover More ${capitalizeFirstLetter(products[0]?.product_type)}: Where Beauty Meets Brilliance!`}</h3>
                     <Swiper
                         breakpoints={{
                             400: {
