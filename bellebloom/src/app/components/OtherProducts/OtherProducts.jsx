@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const capitalizeFirstLetter = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    return str?.charAt(0)?.toUpperCase() + str?.slice(1);
 }
 
 const OtherProducts = ({ products }) => {
