@@ -3,13 +3,15 @@
 .section-about-us {
     color: $main-color;
     text-align: center;
-;
+    ;
+
     h1 {
         color: $main-color;
-        margin-top: 30px; 
+        margin-top: 30px;
     }
 
-    p,p:last-child {
+    p,
+    p:last-child {
         margin: 15px 0px;
     }
 
@@ -22,4 +24,3 @@
         min-height: 80vh;
     }
 }
-

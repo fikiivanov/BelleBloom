@@ -21,10 +21,10 @@
 
         p {
             margin: 0;
-         }
+        }
     }
-    
-    hr  {
+
+    hr {
         margin: 0 10px;
     }
 
@@ -36,17 +36,16 @@
 
     .location,
     .contact,
-    .footer__nav ul 
-    {
+    .footer__nav ul {
         margin-top: 10px;
         display: flex;
         min-height: 80%;
         flex-direction: column;
         justify-content: space-between;
-        
+
     }
 
     .footer__bar {
-        padding: 10px 0px ;
+        padding: 10px 0px;
     }
 }

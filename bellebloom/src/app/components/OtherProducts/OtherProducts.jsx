@@ -18,28 +18,19 @@ const OtherProducts = ({ products }) => {
                     <h3>{`Discover More ${capitalizeFirstLetter(products[0]?.product_type)}: Where Beauty Meets Brilliance!`}</h3>
                     <Swiper
                         breakpoints={{
-                            400: {
-                                slidesPerView: 2
-                            },
 
                             600: {
-                                slidesPerView: 3
+                                slidesPerView: 3,
                             },
-
-                            850: {
-                                slidesPerView: 4,
-                            },
-
-                            1300: {
+                            1200: {
                                 slidesPerView: 5,
                             },
-
-                            1600: {
-                                slidesPerView: 6,
+                            1700: {
+                                slidesPerView: 7,
                             },
                         }}
-                        spaceBetween={50}
-                        slidesPerView={2}
+                        spaceBetween={70}
+                        slidesPerView={1}
                     >
                         {products.map((product) => <SwiperSlide><Card product={product} /></SwiperSlide>)}
                     </Swiper>

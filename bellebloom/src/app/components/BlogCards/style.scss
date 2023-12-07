@@ -1,8 +1,7 @@
-
 /* Blog-cards */
 @import "../../globals.scss";
 
-.blog-cards { 
+.blog-cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -16,7 +15,6 @@
             object-fit: cover;
             width: 100%;
         }
-        
     }
 
     .card__text {
@@ -32,19 +30,19 @@
         text-align: center;
 
         h3 {
-            color:$primary-color;
+            color: $primary-color;
             font-weight: 400;
             font-size: calc(var(--font-size) + 12px);
         }
 
-         a {
+        a {
             color: $primary-color;
             position: relative;
             text-decoration: none;
             transition: border-bottom 0.3s ease;
         }
-    
-         a::after {
+
+        a::after {
             content: "";
             position: absolute;
             display: inline-flex;
@@ -55,14 +53,14 @@
             bottom: -10px;
             transition: width 0.3s ease;
         }
-    
-         a:hover::after {
+
+        a:hover::after {
             width: 100%;
         }
-    }    
+    }
 }
-  
-@media screen and (max-width:900px) {  
+
+@media screen and (max-width: 900px) {
     .section-blog-cards {
         .blog-cards {
             flex-wrap: wrap;
@@ -76,10 +74,11 @@
     }
 }
 
-@media screen and (max-width: 502px) {  
+@media screen and (max-width: 502px) {
     .section-blog-cards {
         .blog-cards {
             flex-direction: column;
+
             .blog-card {
                 width: 70%;
             }
