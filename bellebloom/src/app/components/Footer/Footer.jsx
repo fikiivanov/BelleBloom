@@ -13,9 +13,9 @@ const Footer = () => {
                 <div className="footer__content">
                     <div className="footer__nav">
                         <ul>
-                            <li><h4><Link href="/home">Company</Link></h4></li>
+                            <li><h4><Link href="/">Company</Link></h4></li>
     
-                            <li><Link href="/product">Information</Link></li>
+                            <li><Link href="/products">Information</Link></li>
     
                             <li><Link href="/contact">Contact</Link></li>
     

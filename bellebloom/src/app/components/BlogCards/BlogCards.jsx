@@ -9,7 +9,6 @@ import { container, framerVariantTitle, item } from "./blogCardAnimations";
 
 const BlogCards = ({ props }) => {
 
-    console.log(props)
     let link = `blogs/${props[0].blogTitle}`;
 
     return (
