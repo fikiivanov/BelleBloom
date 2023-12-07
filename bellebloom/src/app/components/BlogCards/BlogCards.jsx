@@ -49,7 +49,7 @@ const BlogCards = ({ props }) => {
                     </motion.ul>
                     <Link
                         href={
-                            props[0].blogTitle == "Face" && "Body" && "Hair"  ? `blogs/${props[0].blogTitle
+                            props[0].blogTitle == "Face" && "Body" && "Hair" ? `blogs/${props[0].blogTitle
                                 .toLowerCase()
                                 .replace(/\s/g, "")}`
                                 : `blogs/`}
