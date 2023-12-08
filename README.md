@@ -2,10 +2,10 @@
 
 
 <div style="display:flex;">
-  <img src="https://drive.google.com/file/d/1FY4IDUs1d3uuBSxYd_jxBC_gMwKIvJ1B/view?usp=sharing" width="270" alt="Image 1">
-<img src="https://drive.google.com/file/d/1Rngz2l18W5mmJHLTn2cBE7ti5uI2Vdoq/view?usp=sharing" width="250" alt="Image 1">
-<img src="https://drive.google.com/file/d/1nQ4I2GUjswqmJCAGu-MF4lgREvLUibox/view?usp=sharing" width="250" alt="Image 3">
-<img src="https://drive.google.com/file/d/1fbg2eBSVzzP6LR0YrW5HFtMPGfojQskQ/view?usp=sharing" width="250" alt="Image 4">
+<img src="bellebloom/public/images/ReadMeImages/bellebloom home-1.png" width="250" alt="Image 1">
+    <img src="bellebloom/public/images/ReadMeImages/belle-bloom-product-3.png" width="270" alt="Image 1">
+<img src="bellebloom/public/images/ReadMeImages/bellebloom-blogs-2.png" width="250" alt="Image 3">
+<img src="bellebloom/public/images/ReadMeImages/bellebloom-home-ds.png" width="250" alt="Image 4">
 </div>
 Welcome to BelleBloom, a sophisticated Next.js website designed to serve as an informative hub for women's beauty. This platform seamlessly integrates a variety of features to provide users with comprehensive insights into beauty products, beauty care tips, and the latest trends. Developed with a client-server-site rendering architecture, BelleBloom ensures a smooth and engaging user experience.
 
