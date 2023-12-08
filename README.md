@@ -5,10 +5,10 @@
 <img src="bellebloom/public/images/ReadMeImages/bellebloom home-1.png" width="250" alt="Image 1">
     <img src="bellebloom/public/images/ReadMeImages/belle-bloom-product-3.png" width="270" alt="Image 1">
 <img src="bellebloom/public/images/ReadMeImages/bellebloom-blogs-2.png" width="250" alt="Image 3">
-<img src="bellebloom/public/images/ReadMeImages/bellebloom-home-ds.png" width="250" alt="Image 4">
 </div>
 Welcome to BelleBloom, a sophisticated Next.js website designed to serve as an informative hub for women's beauty. This platform seamlessly integrates a variety of features to provide users with comprehensive insights into beauty products, beauty care tips, and the latest trends. Developed with a client-server-site rendering architecture, BelleBloom ensures a smooth and engaging user experience.
 
+<div><img src="bellebloom/public/images/ReadMeImages/bellebloom-home-ds.png" width="250" alt="Image 4"></div>
 ## Table of Contents
 - [Key Features](#key-features)
 - [Technologies](#technologies)
