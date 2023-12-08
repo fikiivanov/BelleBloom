@@ -1,13 +1,12 @@
 # BelleBloom: Beauty Information Hub
 
-![BelleBloom Products](images/ReadMeImages/belle-bloom-product-3.png)
 
-![BelleBloom Home](images/ReadMeImages/belle-bloom-home-1)
-
-![BelleBloom Blogs](images/ReadMeImages/belle-bloom-blogs-2)
-
-![BelleBloom Home](images/ReadMeImages/belle-bloom-home-ds.png)
-
+<div style="display:flex;">
+  <img src="https://drive.google.com/file/d/1QUCV6oTUUgi88LztHOBwe0JIS7ICHV1J/view" width="270" alt="Image 1">
+<img src="https://drive.google.com/file/d/1Rngz2l18W5mmJHLTn2cBE7ti5uI2Vdoq/view?usp=drive_link" width="250" alt="Image 1">
+<img src="https://drive.google.com/file/d/1nQ4I2GUjswqmJCAGu-MF4lgREvLUibox/view?usp=drive_link" width="250" alt="Image 3">
+<img src="[https://drive.google.com/uc?export=view&id=1iW7V0XoyAv-9_JnfvffptJnVIX2qaRfN](https://drive.google.com/file/d/1fbg2eBSVzzP6LR0YrW5HFtMPGfojQskQ/view?usp=drive_link)" width="250" alt="Image 4">
+</div>
 Welcome to BelleBloom, a sophisticated Next.js website designed to serve as an informative hub for women's beauty. This platform seamlessly integrates a variety of features to provide users with comprehensive insights into beauty products, beauty care tips, and the latest trends. Developed with a client-server-site rendering architecture, BelleBloom ensures a smooth and engaging user experience.
 
 ## Table of Contents
