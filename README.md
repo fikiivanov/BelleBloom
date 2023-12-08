@@ -1,7 +1,7 @@
 # BelleBloom: Beauty Information Hub
 
 
-<div><img src="bellebloom/public/images/ReadMeImages/bellebloom-home-ds.png" width="250" alt="Image 4"></div>
+<div><img src="bellebloom/public/images/ReadMeImages/bellebloom-home-ds.png" width="600" alt="Image 4"></div>
 <div style="display:flex;">
 <img src="bellebloom/public/images/ReadMeImages/bellebloom home-1.png" width="250" alt="Image 1">
     <img src="bellebloom/public/images/ReadMeImages/belle-bloom-product-3.png" width="270" alt="Image 1">
